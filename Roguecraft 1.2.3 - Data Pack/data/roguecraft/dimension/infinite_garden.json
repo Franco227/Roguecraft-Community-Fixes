@@ -1,0 +1,25 @@
+{
+    "type": "roguecraft:infinite_garden",
+    "generator": {
+        "biome_source": {
+            "biomes": [
+                {
+                    "parameters": {
+                        "erosion": 0.5,
+                        "depth": 0.0,
+                        "weirdness": 0.0,
+                        "offset": 0.0,
+                        "temperature": 0.0,
+                        "humidity": 0.0,
+                        "continentalness": 0.0
+                    },
+                    "biome": "roguecraft:infinite_garden"
+                }
+            ],
+            "type": "minecraft:multi_noise"
+        },
+        "seed": 0,
+        "settings": "roguecraft:infinite_garden",
+        "type": "minecraft:noise"
+    }
+}

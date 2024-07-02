@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.true_completion"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.true_completion",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:11}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "roguecraft:roguecraft/completion"
+}

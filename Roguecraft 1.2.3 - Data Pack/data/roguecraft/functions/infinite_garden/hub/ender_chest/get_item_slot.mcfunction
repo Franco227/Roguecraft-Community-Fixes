@@ -1,0 +1,2 @@
+$data modify storage roguecraft:master enderchest.delete_slot set from entity @s EnderItems[$(delete_index)].Slot
+function roguecraft:infinite_garden/hub/ender_chest/delete_item with storage roguecraft:master enderchest

@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:efficiency": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "efficiency"
+      },
+      "minecraft:fortune": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "fortune"
+      }
+    }
+  }
+]

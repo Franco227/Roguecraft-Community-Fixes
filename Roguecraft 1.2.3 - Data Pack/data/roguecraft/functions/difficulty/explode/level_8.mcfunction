@@ -1,0 +1,1 @@
+execute at @s unless dimension minecraft:the_end run data merge entity @s {powered:1b,ExplosionRadius:4,Fuse:15s}

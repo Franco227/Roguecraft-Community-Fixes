@@ -1,0 +1,48 @@
+{
+  "carvers": {},
+  "downfall": 0.4,
+  "effects": {
+    "fog_color": 0,
+    "music": {
+      "sound":"minecraft.ambient.cave",
+      "max_delay": 1,
+      "min_delay": 1,
+      "replace_current_music": true
+    },
+    "sky_color": 0,
+    "water_color": 10079487,
+    "water_fog_color": 10079487
+  },
+  "features": [
+    [],
+    [
+      "roguecraft:lake_water_surface"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "roguecraft:flower_infinite_garden",
+      "minecraft:patch_grass_plain",
+      "minecraft:patch_tall_grass"
+    ],
+    []
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

@@ -1,0 +1,3 @@
+function custom_ender_dragon:p3/attack_select
+function custom_ender_dragon:p2/attack_select
+schedule function custom_ender_dragon:p5/attack_timer_15s 15s

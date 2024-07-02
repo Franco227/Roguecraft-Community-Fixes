@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.wildfire"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.wildfire",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:20}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "roguecraft:roguecraft/root"
+}

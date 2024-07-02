@@ -1,0 +1,43 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.skillpoint_1"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.skillpoint_1",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:7}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+            "s1":{
+                "trigger": "minecraft:recipe_crafted",
+                "conditions": {
+                  "recipe_id": "roguecraft:skillpoint_1"
+                }
+            },
+            "s2":{
+                "trigger": "minecraft:recipe_crafted",
+                "conditions": {
+                  "recipe_id": "roguecraft:skillpoint_2"
+                }
+            },
+            "s3":{
+                "trigger": "minecraft:recipe_crafted",
+                "conditions": {
+                  "recipe_id": "roguecraft:skillpoint_3"
+                }
+            }
+        },
+        "requirements":[
+            ["s1","s2","s3"]
+        ],
+    "parent": "roguecraft:roguecraft/root"
+}

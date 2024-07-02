@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.chester"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.chester",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:15}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "roguecraft:infinite_garden/root"
+}

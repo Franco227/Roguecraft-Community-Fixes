@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.all_dummy"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.all_dummy",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:14}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "roguecraft:infinite_garden/root"
+}

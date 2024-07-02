@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "roguecraft.advancement.name.skillpoint_500"
+        },
+        "description": {
+            "translate": "roguecraft.advancement.description.skillpoint_500",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{CustomModelData:9}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "granted": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "roguecraft:roguecraft/skillpoint_100"
+}

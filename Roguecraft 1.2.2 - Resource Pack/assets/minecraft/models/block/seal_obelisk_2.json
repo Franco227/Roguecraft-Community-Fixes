@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/seal_obelisk_main",
+	"textures": {
+	  "texture": "block/hub/obelisk_2"
+	}
+  }

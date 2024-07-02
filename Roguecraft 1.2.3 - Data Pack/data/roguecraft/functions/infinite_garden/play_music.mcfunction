@@ -1,0 +1,3 @@
+execute if data storage roguecraft:master {random:0} run playsound roguecraft:music.infinite_garden.infinite_garden voice @s ~ ~ ~ 0.3
+execute if data storage roguecraft:master {random:1} run playsound roguecraft:music.infinite_garden.eternal_soul voice @s ~ ~ ~ 0.3
+execute if data storage roguecraft:master {random:2} run playsound roguecraft:music.infinite_garden.fading_memories voice @s ~ ~ ~ 0.3

@@ -1,0 +1,35 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/warped_fungus_on_a_stick"
+	},
+	"overrides": [
+		{ "predicate": {  "custom_model_data": 2 }, "model": "item/wfoas/ability_1"},
+		{ "predicate": {  "custom_model_data": 3 }, "model": "item/wfoas/ability_2"},
+		{ "predicate": {  "custom_model_data": 4 }, "model": "item/wfoas/ability_3"},
+		{ "predicate": {  "custom_model_data": 5 }, "model": "item/wfoas/ability_4"},
+		{ "predicate": {  "custom_model_data": 6 }, "model": "block/wildfire_shield_break_0"},
+		{ "predicate": {  "custom_model_data": 7 }, "model": "block/wildfire_body"},
+		{ "predicate": {  "custom_model_data": 8 }, "model": "block/wildfire_head"},
+		{ "predicate": {  "custom_model_data": 9 }, "model": "block/wildfire_shield_break_1"},
+		{ "predicate": {  "custom_model_data": 10 }, "model": "block/wildfire_shield_break_2"},
+		{ "predicate": {  "custom_model_data": 11 }, "model": "block/wildfire_shield_break_3"},
+		{ "predicate": {  "custom_model_data": 12 }, "model": "block/wildfire_shield_break_4"},
+		{ "predicate": {  "custom_model_data": 100 }, "model": "block/seal_obelisk_0"},
+		{ "predicate": {  "custom_model_data": 101 }, "model": "block/seal_obelisk_1"},
+		{ "predicate": {  "custom_model_data": 102 }, "model": "block/seal_obelisk_2"},
+		{ "predicate": {  "custom_model_data": 103 }, "model": "block/seal_obelisk_3"},
+		{ "predicate": {  "custom_model_data": 104 }, "model": "block/seal_obelisk_4"},
+		{ "predicate": {  "custom_model_data": 105 }, "model": "block/seal_obelisk_5"},
+		{ "predicate": {  "custom_model_data": 106 }, "model": "block/seal_obelisk_6"},
+		{ "predicate": {  "custom_model_data": 107 }, "model": "block/seal_obelisk_7"},
+		{ "predicate": {  "custom_model_data": 108 }, "model": "block/seal_obelisk_unused"},
+		{ "predicate": {  "custom_model_data": 200 }, "model": "block/seperator"},
+		{ "predicate": {  "custom_model_data": 300 }, "model": "item/wfoas/start_active"},
+		{ "predicate": {  "custom_model_data": 301 }, "model": "item/wfoas/start_inactive"},
+		{ "predicate": {  "custom_model_data": 302 }, "model": "item/wfoas/cancel_active"},
+		{ "predicate": {  "custom_model_data": 303 }, "model": "item/wfoas/cancel_inactive"},
+		{ "predicate": {  "custom_model_data": 304 }, "model": "item/wfoas/join_active"},
+		{ "predicate": {  "custom_model_data": 305 }, "model": "item/wfoas/join_inactive"}
+	]
+}

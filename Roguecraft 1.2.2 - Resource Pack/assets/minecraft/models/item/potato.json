@@ -1,0 +1,33 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/potato"
+	},
+	"overrides": [
+		{ "predicate": {  "custom_model_data":1}, "model": "item/advancements/avatar"},
+        { "predicate": {  "custom_model_data":2}, "model": "item/advancements/now_what"},
+        { "predicate": {  "custom_model_data":3}, "model": "item/advancements/half_a_heart_parry"},
+        { "predicate": {  "custom_model_data":4}, "model": "item/advancements/apocalypse"},
+        { "predicate": {  "custom_model_data":5}, "model": "item/advancements/instant_regret"},
+        { "predicate": {  "custom_model_data":6}, "model": "item/advancements/instant_delivery"},
+        { "predicate": {  "custom_model_data":7}, "model": "item/advancements/untapped_potential"},
+        { "predicate": {  "custom_model_data":8}, "model": "item/advancements/min_maxing"},
+        { "predicate": {  "custom_model_data":9}, "model": "item/advancements/perfect_optimization"},
+        { "predicate": {  "custom_model_data":10}, "model": "item/advancements/100_percent"},
+        { "predicate": {  "custom_model_data":11}, "model": "item/advancements/1000_percent"},
+        { "predicate": {  "custom_model_data":12}, "model": "item/advancements/gastropolis"},
+        { "predicate": {  "custom_model_data":13}, "model": "item/advancements/invulnerable_shield_at_home"},
+        { "predicate": {  "custom_model_data":14}, "model": "item/advancements/100_dummy"},
+        { "predicate": {  "custom_model_data":15}, "model": "item/advancements/an_old_friend"},
+        { "predicate": {  "custom_model_data":16}, "model": "item/advancements/dragon_slain"},
+        { "predicate": {  "custom_model_data":17}, "model": "item/advancements/first_ability"},
+        { "predicate": {  "custom_model_data":18}, "model": "item/advancements/invulnerable_low_health"},
+        { "predicate": {  "custom_model_data":19}, "model": "item/advancements/keepinventory"},
+        { "predicate": {  "custom_model_data":20}, "model": "item/advancements/kill_wildfire"},
+        { "predicate": {  "custom_model_data":21}, "model": "item/advancements/nice_try"},
+        { "predicate": {  "custom_model_data":22}, "model": "item/advancements/roguecraft"},
+        { "predicate": {  "custom_model_data":23}, "model": "item/advancements/die_in_garden"},
+        { "predicate": {  "custom_model_data":24}, "model": "item/advancements/speedrun"},
+        { "predicate": {  "custom_model_data":25}, "model": "item/advancements/world_record"}
+	]
+}

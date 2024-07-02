@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "sharpness"
+      },
+      "minecraft:looting": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "looting"
+      },
+      "minecraft:efficiency": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "efficiency"
+      }
+    }
+  }
+]

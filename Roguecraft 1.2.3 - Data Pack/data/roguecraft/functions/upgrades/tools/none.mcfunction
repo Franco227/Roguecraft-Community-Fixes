@@ -1,0 +1,1 @@
+$item replace entity @s container.1 with minecraft:stone_pickaxe{Unbreakable:true,Enchantments:[{id:"minecraft:efficiency",lvl:$(efficiency)},{id:"minecraft:fortune",lvl:$(fortune)}]}

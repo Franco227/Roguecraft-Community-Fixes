@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:infinity": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "infinity"
+      },
+      "minecraft:punch": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "punch"
+      },
+      "minecraft:power": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "power"
+      },
+      "minecraft:flame": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "flame"
+      }
+    }
+  }
+]

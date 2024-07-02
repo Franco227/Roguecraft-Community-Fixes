@@ -1,0 +1,1 @@
+$execute positioned $(X) 320 $(Z) positioned over world_surface run tp @s ~ ~ ~

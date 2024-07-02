@@ -1,0 +1,10 @@
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:0} if entity @a[scores={skillpoints=5..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:1}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:1} if entity @a[scores={skillpoints=10..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:2}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:2} if entity @a[scores={skillpoints=25..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:3}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:3} if entity @a[scores={skillpoints=50..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:4}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:4} if entity @a[scores={skillpoints=75..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:5}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:5} if entity @a[scores={skillpoints=100..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:6}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:6} if entity @a[scores={skillpoints=150..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:7}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:7} if entity @a[scores={skillpoints=200..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:8}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:8} if entity @a[scores={skillpoints=300..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:9}
+execute if data storage roguecraft:master {infinite_garden_skillpoint_phase:9} if entity @a[scores={skillpoints=500..}] run data merge storage roguecraft:master {infinite_garden_skillpoint_phase:10}

@@ -1,0 +1,215 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "minecraft:item/reaper_scythe_netherite"
+	},
+	"elements": [
+		{
+			"name": "handle - top",
+			"from": [8, 23.80866, 6.96194],
+			"to": [9, 31.80866, 7.96194],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.5, 23.80866, 7.46194]},
+			"faces": {
+				"north": {"uv": [0.5, 9.5, 1, 13.5], "texture": "#1"},
+				"east": {"uv": [1, 9.5, 1.5, 13.5], "texture": "#1"},
+				"south": {"uv": [1.5, 9.5, 2, 13.5], "texture": "#1"},
+				"west": {"uv": [2, 9.5, 2.5, 13.5], "texture": "#1"},
+				"up": {"uv": [3.5, 10, 3, 9.5], "texture": "#1"},
+				"down": {"uv": [3.5, 10, 3, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "handle - main",
+			"from": [8, 0, 7],
+			"to": [9, 24, 8],
+			"faces": {
+				"north": {"uv": [13.5, 0.5, 14, 12.5], "texture": "#1"},
+				"east": {"uv": [14, 0.5, 14.5, 12.5], "texture": "#1"},
+				"south": {"uv": [14.5, 0.5, 15, 12.5], "texture": "#1"},
+				"west": {"uv": [15, 0.5, 15.5, 12.5], "texture": "#1"},
+				"up": {"uv": [13, 6, 12.5, 5.5], "texture": "#1"},
+				"down": {"uv": [13, 6, 12.5, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "handle - bottom",
+			"from": [8, -7.50418, 5.50733],
+			"to": [9, 0.49582, 6.50733],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.5, -3.50418, 6.00733]},
+			"faces": {
+				"north": {"uv": [5.5, 9.5, 6, 13.5], "texture": "#1"},
+				"east": {"uv": [6, 9.5, 6.5, 13.5], "texture": "#1"},
+				"south": {"uv": [6.5, 9.5, 7, 13.5], "texture": "#1"},
+				"west": {"uv": [7, 9.5, 7.5, 13.5], "texture": "#1"},
+				"up": {"uv": [8.5, 10, 8, 9.5], "texture": "#1"},
+				"down": {"uv": [8.5, 10, 8, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "blade",
+			"from": [8.5, 22, -12],
+			"to": [8.5, 30, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4], "texture": "#1"},
+				"east": {"uv": [11.5, 0.5, 0.5, 4.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 4], "texture": "#1"},
+				"west": {"uv": [0.5, 0.5, 11.5, 4.5], "texture": "#1"},
+				"up": {"uv": [0, 11, 0, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "attachment ring",
+			"from": [7.5, 27.1606, 8.21998],
+			"to": [9.5, 28.1606, 11.21998],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [9, 29.1606, 10.21998]},
+			"faces": {
+				"north": {"uv": [9.5, 6, 10.5, 6.5], "texture": "#1"},
+				"east": {"uv": [9.5, 5, 11, 5.5], "texture": "#1"},
+				"south": {"uv": [9.5, 6.5, 10.5, 7], "texture": "#1"},
+				"west": {"uv": [9.5, 5.5, 11, 6], "texture": "#1"},
+				"up": {"uv": [8.5, 6.5, 7.5, 5], "texture": "#1"},
+				"down": {"uv": [9.5, 5, 8.5, 6.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "tool grip - bottom",
+			"from": [8.5, 10, 3],
+			"to": [8.5, 11, 7],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.5], "texture": "#1"},
+				"east": {"uv": [12, 8.5, 10, 9], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 0.5], "texture": "#1"},
+				"west": {"uv": [10, 8.5, 12, 9], "texture": "#1"},
+				"up": {"uv": [0, 2, 0, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "tool grip - top",
+			"from": [8.5, -5.00312, 5.01569],
+			"to": [8.5, -4.00312, 9.01569],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.5, -7.50312, 6.51569]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.5], "texture": "#1"},
+				"east": {"uv": [12, 9.5, 10, 10], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 0.5], "texture": "#1"},
+				"west": {"uv": [10, 9.5, 12, 10], "texture": "#1"},
+				"up": {"uv": [0, 2, 0, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "grip - north",
+			"from": [7.75, 0.5, 6.75],
+			"to": [9.25, 9.5, 6.75],
+			"faces": {
+				"north": {"uv": [0.5, 5, 1, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"south": {"uv": [1, 5, 1.5, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"up": {"uv": [1, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [1, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"name": "grip - east",
+			"from": [9.25, 0.5, 6.75],
+			"to": [9.25, 9.5, 8.25],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"east": {"uv": [2, 5, 2.5, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"west": {"uv": [2.5, 5, 3, 8], "texture": "#1"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "grip - south",
+			"from": [7.75, 0.5, 8.25],
+			"to": [9.25, 9.5, 8.25],
+			"faces": {
+				"north": {"uv": [4, 5, 4.5, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"south": {"uv": [3.5, 5, 4, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"up": {"uv": [1, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [1, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"name": "grip - west",
+			"from": [7.75, 0.5, 6.75],
+			"to": [7.75, 9.5, 8.25],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"east": {"uv": [5.5, 5, 6, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"west": {"uv": [5, 5, 5.5, 8], "texture": "#1"},
+				"up": {"uv": [0, 1, 0, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 1], "texture": "#1"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-0.5, 0, 2.25]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-0.5, 0, 2.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [9.2, 1.54, 0.61],
+			"translation": [1.25, 0.25, -0.75],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_lefthand": {
+			"rotation": [9.2, 1.54, 0.61],
+			"translation": [1.25, 0.25, -0.75],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"ground": {
+			"translation": [0, 12.25, 0]
+		},
+		"gui": {
+			"rotation": [90, 60, -90],
+			"translation": [-0.75, 0, 80],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"head": {
+			"rotation": [-88.35, 49.98, -91.28],
+			"translation": [-1, 21, 0]
+		},
+		"fixed": {
+			"rotation": [89.97, -45.01, 89.96],
+			"translation": [0.5, -5.5, -0.65],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "handle",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0, 1, 2]
+		},
+		{
+			"name": "blade",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [3, 4]
+		},
+		{
+			"name": "grips",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [5, 6, 7, 8, 9, 10]
+		}
+	]
+}

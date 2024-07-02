@@ -1,0 +1,1 @@
+execute at @e[type=minecraft:ender_dragon,limit=1] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["auto_aim"],Duration:400}

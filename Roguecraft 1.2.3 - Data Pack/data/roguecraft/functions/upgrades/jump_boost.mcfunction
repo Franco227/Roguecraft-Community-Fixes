@@ -1,0 +1,1 @@
+$effect give @s minecraft:jump_boost infinite $(jump_boost) true

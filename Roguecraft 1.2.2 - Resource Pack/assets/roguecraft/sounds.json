@@ -1,0 +1,129 @@
+{
+    "entity.wildfire.death_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/death_0"
+        ]
+    },
+    "entity.wildfire.death_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/death_1"
+        ]
+    },
+    "entity.wildfire.death_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/death_2"
+        ]
+    },
+    "entity.wildfire.hurt_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/hurt_0"
+        ]
+    },
+    "entity.wildfire.hurt_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/hurt_1"
+        ]
+    },
+    "entity.wildfire.hurt_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/hurt_2"
+        ]
+    },
+    "entity.wildfire.shield_break_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shield_break_0"
+        ]
+    },
+    "entity.wildfire.shield_break_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shield_break_1"
+        ]
+    },
+    "entity.wildfire.shield_break_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shield_break_2"
+        ]
+    },
+    "entity.wildfire.shockwave_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shockwave_0"
+        ]
+    },
+    "entity.wildfire.shockwave_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shockwave_1"
+        ]
+    },
+    "entity.wildfire.shockwave_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shockwave_2"
+        ]
+    },
+    "entity.wildfire.shoot_vocal_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_vocal_0"
+        ]
+    },
+    "entity.wildfire.shoot_vocal_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_vocal_1"
+        ]
+    },
+    "entity.wildfire.shoot_vocal_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_vocal_2"
+        ]
+    },
+    "entity.wildfire.shoot_0": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_0"
+        ]
+    },
+    "entity.wildfire.shoot_1": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_1"
+        ]
+    },
+    "entity.wildfire.shoot_2": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_2"
+        ]
+    },
+    "entity.wildfire.shoot_3": {
+        "sounds": [
+            "roguecraft:entity/wildfire/shoot_3"
+        ]
+    },
+    "entity.wildfire.spawn": {
+        "sounds": [
+            "roguecraft:entity/wildfire/spawn"
+        ]
+    },
+    "entity.wildfire.summon_charge": {
+        "sounds": [
+            "roguecraft:entity/wildfire/summon_charge"
+        ]
+    },
+
+    "music.infinite_garden.infinite_garden": {
+        "sounds": [
+            "roguecraft:music/infinite_garden/infinite_garden"
+        ]
+    },
+    "music.infinite_garden.fading_memories": {
+        "sounds": [
+            "roguecraft:music/infinite_garden/fading_memories"
+        ]
+    },
+    "music.infinite_garden.eternal_soul": {
+        "sounds": [
+            "roguecraft:music/infinite_garden/eternal_soul"
+        ]
+    },
+
+    "music.empty": {
+        "sounds": [
+            "roguecraft:music/empty"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "values": [
+      "minecraft:minecart",
+      "minecraft:falling_block",
+      "minecraft:chest_minecart",
+      "minecraft:hopper_minecart",
+      "minecraft:furnace_minecart",
+      "minecraft:command_block_minecart",
+      "minecraft:spawner_minecart",
+      "minecraft:boat",
+      "minecraft:chest_boat",
+      "minecraft:armor_stand",
+      "minecraft:arrow",
+      "minecraft:dragon_fireball",
+      "minecraft:egg",
+      "minecraft:small_fireball",
+      "minecraft:spectral_arrow",
+      "minecraft:trident",
+      "minecraft:snow_golem",
+      "minecraft:tnt",
+      "minecraft:tnt_minecart",
+      "minecraft:end_crystal",
+      "minecraft:ender_dragon",
+      "minecraft:falling_block",
+      "minecraft:fireball",
+      "minecraft:silverfish",
+      "minecraft:wither",
+      "minecraft:wither_skull"
+    ]
+  }

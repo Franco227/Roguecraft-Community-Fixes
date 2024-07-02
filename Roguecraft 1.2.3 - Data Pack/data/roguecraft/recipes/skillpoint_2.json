@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "igi",
+        "gPg",
+        "igi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:copper_ingot"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "P": {
+            "item": "minecraft:structure_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:structure_void",
+        "count": 2
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "gui_light": "front",
+  "textures": {
+    "all": "minecraft:item/empty_planks"
+  }
+}

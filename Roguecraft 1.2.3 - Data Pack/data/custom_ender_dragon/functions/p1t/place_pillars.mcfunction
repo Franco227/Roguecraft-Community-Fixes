@@ -1,0 +1,1 @@
+execute in minecraft:the_end run place template custom_ender_dragon:end_island_1 -100 0 -100

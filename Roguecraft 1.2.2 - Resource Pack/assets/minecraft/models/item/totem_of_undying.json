@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/totem_of_undying"
+  },
+  "overrides": [
+		{ "predicate": { "custom_model_data": 301 }, "model": "item/misc/remove_upgrade" },
+		{ "predicate": { "custom_model_data": 400 }, "model": "item/misc/empty" },
+		{ "predicate": { "custom_model_data": 401 }, "model": "item/locks/small" },
+		{ "predicate": { "custom_model_data": 402 }, "model": "item/locks/medium" },
+		{ "predicate": { "custom_model_data": 403 }, "model": "item/locks/large" },
+		{ "predicate": { "custom_model_data": 900001 }, "model": "item/loadout/empty_axe" },
+		{ "predicate": { "custom_model_data": 900002 }, "model": "item/loadout/empty_hoe" },
+		{ "predicate": { "custom_model_data": 900003 }, "model": "item/loadout/empty_pickaxe" },
+		{ "predicate": { "custom_model_data": 900004 }, "model": "item/loadout/empty_shovel" },
+		{ "predicate": { "custom_model_data": 900005 }, "model": "item/loadout/empty_sword" },
+		{ "predicate": { "custom_model_data": 900006 }, "model": "item/loadout/empty_arrow" },
+		{ "predicate": { "custom_model_data": 900007 }, "model": "item/loadout/empty_bow" },
+		{ "predicate": { "custom_model_data": 900008 }, "model": "item/loadout/empty_bed" },
+		{ "predicate": { "custom_model_data": 900009 }, "model": "item/loadout/empty_bucket" },
+		{ "predicate": { "custom_model_data": 900010 }, "model": "item/loadout/empty_flint_and_steel" },
+		{ "predicate": { "custom_model_data": 900011 }, "model": "item/loadout/empty_cobblestone" },
+		{ "predicate": { "custom_model_data": 900012 }, "model": "item/loadout/empty_apple" },
+		{ "predicate": { "custom_model_data": 900013 }, "model": "item/loadout/empty_pearl" },
+		{ "predicate": { "custom_model_data": 900014 }, "model": "item/loadout/empty_compass" },
+		{ "predicate": { "custom_model_data": 900015 }, "model": "item/loadout/empty_food" },
+		{ "predicate": { "custom_model_data": 900016 }, "model": "item/loadout/empty_apple" },
+		{ "predicate": { "custom_model_data": 900017 }, "model": "item/loadout/empty_splash_potion" },
+		{ "predicate": { "custom_model_data": 900018 }, "model": "item/loadout/empty_splash_potion_1" },
+		{ "predicate": { "custom_model_data": 900019 }, "model": "item/loadout/empty_splash_potion_2" },
+		{ "predicate": { "custom_model_data": 900020 }, "model": "item/loadout/empty_splash_potion_3" },
+		{ "predicate": { "custom_model_data": 900021 }, "model": "item/loadout/empty_splash_potion_4" },
+		{ "predicate": { "custom_model_data": 900022 }, "model": "item/loadout/empty_ability_1" },
+		{ "predicate": { "custom_model_data": 900023 }, "model": "item/loadout/empty_ability_2" },
+		{ "predicate": { "custom_model_data": 900024 }, "model": "item/loadout/empty_ability_3" },
+		{ "predicate": { "custom_model_data": 900025 }, "model": "item/loadout/empty_ability_4" }
+  ]
+}

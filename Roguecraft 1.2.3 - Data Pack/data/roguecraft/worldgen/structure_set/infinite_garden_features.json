@@ -1,0 +1,131 @@
+
+{
+  "structures": [
+    {
+        "structure": "roguecraft:leaves_1",
+        "weight": 12
+    },
+    {
+        "structure": "roguecraft:leaves_2",
+        "weight": 12
+    },
+    {
+        "structure": "roguecraft:leaves_3_1",
+        "weight": 6
+    },
+    {
+        "structure": "roguecraft:leaves_3_2",
+        "weight": 6
+    },
+    {
+        "structure": "roguecraft:leaves_4_1",
+        "weight": 6
+    },
+    {
+        "structure": "roguecraft:leaves_4_2",
+        "weight": 6
+    },
+    {
+        "structure": "roguecraft:leaves_5_1",
+        "weight": 3
+    },
+    {
+        "structure": "roguecraft:leaves_5_2",
+        "weight": 3
+    },
+    {
+        "structure": "roguecraft:leaves_5_3",
+        "weight": 3
+    },
+    {
+        "structure": "roguecraft:leaves_5_4",
+        "weight": 3
+    },
+    {
+        "structure": "roguecraft:rock_1_1",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_1_2",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_1_3",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_1_4",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_2_1",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_2_2",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_2_3",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_2_4",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_3_1",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_3_2",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_3_3",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_3_4",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_4_1",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_4_2",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_4_3",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_4_4",
+        "weight": 2
+    },
+    {
+        "structure": "roguecraft:rock_5_1",
+        "weight": 1
+    },
+    {
+        "structure": "roguecraft:rock_5_2",
+        "weight": 1
+    },
+    {
+        "structure": "roguecraft:rock_5_3",
+        "weight": 1
+    },
+    {
+        "structure": "roguecraft:rock_5_4",
+        "weight": 1
+    }
+  ],
+  "placement": {
+      "spacing": 3,
+      "separation": 0.1,
+      "salt": 783434,
+      "type": "random_spread"
+  }
+}

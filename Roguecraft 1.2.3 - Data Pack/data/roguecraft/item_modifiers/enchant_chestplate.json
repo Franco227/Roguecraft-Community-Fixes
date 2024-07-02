@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:protection": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "protection"
+      },
+      "minecraft:thorns": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "thorns"
+      }
+    }
+  }
+]

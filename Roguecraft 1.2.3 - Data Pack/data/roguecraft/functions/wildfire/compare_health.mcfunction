@@ -1,0 +1,2 @@
+execute store result score @s hitbox_health run data get entity @s Health
+$execute if score @s hitbox_health < @e[type=marker,tag=wildfire,tag=$(boss_id),limit=1] lowest_health run scoreboard players operation @e[type=marker,tag=wildfire,tag=$(boss_id),limit=1] lowest_health = @s hitbox_health

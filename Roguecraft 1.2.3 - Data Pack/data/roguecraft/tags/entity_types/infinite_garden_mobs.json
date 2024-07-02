@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:marker",
+    "minecraft:chicken",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:cow",
+    "minecraft:llama",
+    "minecraft:fox",
+    "minecraft:panda",
+    "minecraft:sniffer",
+    "minecraft:cat",
+    "minecraft:wolf"
+  ]
+}

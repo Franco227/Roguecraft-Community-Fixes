@@ -1,0 +1,21 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "minecraft:negative_spaces.ttf",
+            "shift": [0.0, 0.0],
+            "size": 10.0,
+            "oversample": 1.0
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/enderchest.png",
+            "shift": [32, 6],
+            "ascent": -5,
+            "height": 16,
+            "chars": [
+                "\uEff2"
+            ]
+        }
+    ]
+}

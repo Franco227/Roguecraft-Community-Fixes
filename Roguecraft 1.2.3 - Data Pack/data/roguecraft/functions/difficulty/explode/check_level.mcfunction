@@ -1,0 +1,3 @@
+execute if score @e[type=marker,tag=master,limit=1] random_difficulty_max matches 4..5 run function roguecraft:difficulty/explode/level_4
+execute if score @e[type=marker,tag=master,limit=1] random_difficulty_max matches 6..7 run function roguecraft:difficulty/explode/level_6
+execute if score @e[type=marker,tag=master,limit=1] random_difficulty_max matches 8.. run function roguecraft:difficulty/explode/level_8

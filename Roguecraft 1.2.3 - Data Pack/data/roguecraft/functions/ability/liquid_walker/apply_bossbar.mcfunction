@@ -1,0 +1,3 @@
+$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_liquid_bar] store result bossbar liquid_$(id) max run scoreboard players get @a[tag=mana_$(id),limit=1] liquid_timer
+$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_liquid_bar] store result bossbar liquid_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] liquid_timer
+$bossbar set minecraft:liquid_$(id) players @a[tag=mana_$(id),tag=apply_liquid_bar]

@@ -1,0 +1,1 @@
+execute at @a as @e[tag=hub_builder,sort=nearest,limit=1] at @s if loaded ~ ~ ~ run function roguecraft:infinite_garden/hub/builder/build_chunk with entity @s data

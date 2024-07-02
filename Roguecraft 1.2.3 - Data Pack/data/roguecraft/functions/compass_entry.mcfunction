@@ -1,0 +1,2 @@
+$item replace entity @s[nbt={SelectedItem:{id:"minecraft:compass"}}] weapon.mainhand with minecraft:compass{display:{Name:'{"translate":"roguecraft.compass.entry"}'},LodestoneDimension:"minecraft:the_nether",LodestonePos:{X:$(entry_x),Y:127,Z:$(entry_z)},LodestoneTracked:false}
+$item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] weapon.offhand with minecraft:compass{display:{Name:'{"translate":"roguecraft.compass.entry"}'},LodestoneDimension:"minecraft:the_nether",LodestonePos:{X:$(entry_x),Y:127,Z:$(entry_z)},LodestoneTracked:false}

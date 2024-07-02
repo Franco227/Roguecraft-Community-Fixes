@@ -1,0 +1,1 @@
+$effect give @s minecraft:strength infinite $(current_strength) true

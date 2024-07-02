@@ -1,0 +1,1 @@
+$bossbar set minecraft:dirt_$(id) players @a[tag=terra_lumina]

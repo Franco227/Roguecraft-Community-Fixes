@@ -1,0 +1,1 @@
+title @s actionbar ["",{"translate":"roguecraft.class_ability.glass_cannon","bold":true,"color":"aqua"},{"text":" | ","bold":true,"color":"aqua"},{"translate":"roguecraft.generic.cost","bold":true,"color":"aqua"},{"text":": 3 ","bold":true,"color":"aqua"},{"translate":"roguecraft.generic.hearts","bold":true,"color":"aqua"}]

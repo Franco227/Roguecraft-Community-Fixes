@@ -1,0 +1,2 @@
+# For items that has an unknown amount run this so the main function dont refuse to run if amount is zero
+$execute store success score @s temp run item replace entity @s container.$(slot) with $(itemid) $(amount)

@@ -1,0 +1,1 @@
+$item replace entity @s[scores={compass=1}] container.$(selectedslot) with minecraft:compass{display:{Name:'{"translate":"roguecraft.compass.nether"}'},LodestoneDimension:"minecraft:the_nether",LodestonePos:{X:$(X),Y:127,Z:$(Z)},LodestoneTracked:false}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/wildfire_shield_main",
+	"textures": {
+	  "texture": "block/wildfire/shield_0"
+	}
+  }

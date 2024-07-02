@@ -1,0 +1,1 @@
+$attribute @s minecraft:generic.max_health base set $(temp_score)

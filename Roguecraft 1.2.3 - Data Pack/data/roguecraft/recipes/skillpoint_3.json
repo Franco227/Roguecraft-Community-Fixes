@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gDg",
+        "DPD",
+        "gDg"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "P": {
+            "item": "minecraft:structure_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:structure_void",
+        "count": 4
+    }
+}

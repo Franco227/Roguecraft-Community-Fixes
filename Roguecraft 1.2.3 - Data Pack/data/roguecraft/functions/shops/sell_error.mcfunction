@@ -1,0 +1,2 @@
+playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 1 0.5
+$tellraw @s {"translate":"roguecraft.chat_messages.error_selling","italic":true,"color":"red","with":[{"translate":"roguecraft.item.remove_upgrade"},{"translate":"roguecraft.chat_messages.$(type)"}]}

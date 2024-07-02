@@ -1,0 +1,11 @@
+Currently supported languages:
+	English (en_us)
+	Brasilian Portuguese (pt_br, translation by r4iin)
+	German (de_de, translation by monocode)
+	LOLCAT (lol_us, translation by Google Translate, I guess?)
+	Dutch (nl_nl, translation by ipengus)
+	Traditional Chinese (zh_tw, translation by ouoking)
+	Simplified Chinese (zh_cn, translation by tpmikl)
+	Russian (ru_ru, translation by corrupted_alter)
+	Danish (da_dk, translation by budged)
+	Turkish (tr_tr, translation by slaughternymph)
