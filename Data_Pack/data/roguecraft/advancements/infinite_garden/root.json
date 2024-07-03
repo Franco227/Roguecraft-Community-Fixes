@@ -7,10 +7,10 @@
             "translate": "roguecraft.advancement.description.root_infinite_garden",
             "color": "green"
         },
-            "icon": {
-                "item": "minecraft:warped_fungus_on_a_stick",
-                "nbt": "{CustomModelData:2,Enchantments:[{id:'minecraft:channeling',lvl:1}]}"
-                },
+        "icon": {
+            "item": "minecraft:warped_fungus_on_a_stick",
+            "nbt": "{CustomModelData:2,Enchantments:[{id:'minecraft:channeling',lvl:1}]}"
+        },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": false,

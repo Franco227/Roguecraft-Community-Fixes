@@ -8,7 +8,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:potato",
+            "item": "minecraft:stick",
             "nbt": "{CustomModelData:14}"
         },
         "frame": "task",
