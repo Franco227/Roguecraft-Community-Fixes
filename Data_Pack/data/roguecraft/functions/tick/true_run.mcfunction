@@ -58,3 +58,6 @@ execute as @a[nbt={Dimension:"minecraft:the_end"},tag=!end] unless entity @a[tag
 
 #stronghold location
 execute as @a[scores={stronghold_location=1..}] run function roguecraft:trigger_commands/tell_stronghold with storage roguecraft:master Region
+
+#flint and steel auto-repair
+execute if entity @a[scores={flint_and_steel=1}] run function roguecraft:tick/repair_flint_and_steel

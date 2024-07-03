@@ -23,7 +23,7 @@ $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelDat
 $execute as @s[scores={bow=1}] if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelData:900007}}] run item replace entity @s container.$(selectedslot) with bow{Unbreakable:true}
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelData:900007}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_bow
 #flint and steel
-$execute as @s[scores={flint_and_steel=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelData:900010}}] run item replace entity @s container.$(selectedslot) with flint_and_steel{Unbreakable:true}
+$execute as @s[scores={flint_and_steel=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelData:900010}}] run item replace entity @s container.$(selectedslot) with flint_and_steel{Permanent:true}
 #comp ass
 $data modify storage roguecraft:master Region.selectedslot set value $(selectedslot)
 $execute as @s[scores={compass=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,tag:{CustomModelData:900014}}] run function roguecraft:upgrades/compass with storage roguecraft:master Region

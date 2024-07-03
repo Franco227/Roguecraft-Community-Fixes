@@ -16,6 +16,7 @@ You can join the MonoCode's Discord server [here](https://discord.gg/d5FxfTYUqQ)
 - Ability items not being unbreakable.
 - [Compass not pointing to nether entry after killing the Wildfire when overworld chunks are unloaded](https://discord.com/channels/1114531442052059168/1257161216866910289).
 - Gamemode auto-switching to adventure in the hub while in dev mode (by Pengu).
+- [Unbreakable Flint and Steel gets cleared when used on a Creeper](https://discord.com/channels/1114531442052059168/1252575711663755375)
 ## Additions
 - French Translation
 - Recipes for smelting/blasting Raw Copper Block, Raw Iron Block and Raw Gold Block.
