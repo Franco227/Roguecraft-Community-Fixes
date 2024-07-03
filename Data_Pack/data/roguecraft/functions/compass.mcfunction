@@ -5,6 +5,6 @@ execute as @s[scores={enter_nether=1}] if data storage roguecraft:master {strong
 kill @e[type=armor_stand,tag=structure_stand]
 execute as @s[nbt={Dimension:"minecraft:overworld"}] if data storage roguecraft:master {stronghold:1b} run function roguecraft:compass_stronghold with storage roguecraft:master Region
 
-execute as @s[nbt={Dimension:"minecraft:the_nether"}] if data storage roguecraft:master {stronghold:1b} run execute store result storage roguecraft:master entry_x int 1 run scoreboard players get @s entry_x
-execute as @s[nbt={Dimension:"minecraft:the_nether"}] if data storage roguecraft:master {stronghold:1b} run execute store result storage roguecraft:master entry_z int 1 run scoreboard players get @s entry_z
-execute as @s[nbt={Dimension:"minecraft:the_nether"}] if data storage roguecraft:master {stronghold:1b} run function roguecraft:compass_entry with storage roguecraft:master
+execute as @s[nbt={Dimension:"minecraft:the_nether"}] if score @e[tag=master,limit=1] blaze_rods matches 1 run execute store result storage roguecraft:master entry_x int 1 run scoreboard players get @s entry_x
+execute as @s[nbt={Dimension:"minecraft:the_nether"}] if score @e[tag=master,limit=1] blaze_rods matches 1 run execute store result storage roguecraft:master entry_z int 1 run scoreboard players get @s entry_z
+execute as @s[nbt={Dimension:"minecraft:the_nether"}] if score @e[tag=master,limit=1] blaze_rods matches 1 run function roguecraft:compass_entry with storage roguecraft:master
