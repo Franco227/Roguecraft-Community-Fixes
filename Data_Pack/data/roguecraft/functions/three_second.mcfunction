@@ -5,8 +5,8 @@ execute store result storage roguecraft:master difficulty int 1 run scoreboard p
 execute at @a as @e[distance=..64,tag=!buffed,type=#roguecraft:difficulty_impacted] unless data entity @s {CustomName:' "Ender Dragon" '} run function roguecraft:difficulty/apply_difficulty with storage roguecraft:master
 
 execute as @a[scores={version_num=1..}] unless data storage roguecraft:master version_num store result storage roguecraft:master version_num int 1 run scoreboard players get @s version_num
-execute unless data storage roguecraft:master version_num run function roguecraft:update/110/main 
-execute if entity @a if data storage roguecraft:master {run_active:0} if data storage roguecraft:master {version_num:1} run function roguecraft:update/111/main 
+execute unless data storage roguecraft:master version_num run function roguecraft:update/110/main
+execute if entity @a if data storage roguecraft:master {run_active:0} if data storage roguecraft:master {version_num:1} run function roguecraft:update/111/main
 
 #difficulty
 execute store result storage roguecraft:master difficulty_setting int 1 run difficulty
@@ -28,6 +28,6 @@ execute at @a[nbt={Dimension:"minecraft:the_nether"}] run fill ~-20 ~-20 ~-20 ~2
 execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in the_end if loaded -100 0 -100 if loaded 100 0 100 run schedule function roguecraft:ender_dragon/death 10s append
 execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in the_end if loaded -100 0 -100 if loaded 100 0 100 run tag @a add victory
 
-gamemode adventure @a[tag=hub]
+execute as @a unless entity @s[tag=dev] run gamemode adventure @s[tag=hub]
 
 schedule function roguecraft:three_second 3s

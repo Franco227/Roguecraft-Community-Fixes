@@ -21,7 +21,7 @@ execute as @e[type=area_effect_cloud,tag=wildfire_big_fireball,nbt={Age:44}] at 
 execute as @e[type=area_effect_cloud,tag=wildfire_big_fireball,nbt={Age:74}] at @s run function roguecraft:wildfire/attacks/big_fireball/start
 execute as @e[type=area_effect_cloud,tag=wildfire_big_fireball,nbt={Age:104}] at @s run function roguecraft:wildfire/attacks/big_fireball/start
 
-execute at @e[tag=wildfire_particle_marker,tag=pulse] run particle minecraft:soul_fire_flame ~ ~2.5 ~ 0.5 1 0.5 0 5 
+execute at @e[tag=wildfire_particle_marker,tag=pulse] run particle minecraft:soul_fire_flame ~ ~2.5 ~ 0.5 1 0.5 0 5
 execute as @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar] at @s run function roguecraft:wildfire/attacks/pillar/marker_main
 
 execute as @e[type=marker,tag=wildfire] run function roguecraft:wildfire/hover
