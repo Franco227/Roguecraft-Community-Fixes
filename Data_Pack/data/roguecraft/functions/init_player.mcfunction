@@ -137,7 +137,6 @@ gamemode adventure @s
 recipe give @s roguecraft:skillpoint_1
 recipe give @s roguecraft:skillpoint_2
 recipe give @s roguecraft:skillpoint_3
-recipe give @s minecraft:blast_furnace
 
 function roguecraft:infinite_garden/hub/ender_chest/reset
 function roguecraft:infinite_garden/hub/check_inventory

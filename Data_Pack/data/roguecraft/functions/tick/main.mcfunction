@@ -21,3 +21,12 @@ execute if data storage roguecraft:master {run_active:1} if entity @a[tag=garden
 execute if data storage roguecraft:master {run_active:1} run function roguecraft:tick/true_run
 execute if entity @a[gamemode=!adventure] run function roguecraft:tick/run
 execute if entity @a[tag=victory] run function roguecraft:tick/final
+
+#custom recipes
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_copper_block"}]}] run recipe give @s roguecraft:copper_block_from_blasting_raw_copper_block
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_copper_block"}]}] run recipe give @s roguecraft:copper_block_from_smelting_raw_copper_block
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_gold_block"}]}] run recipe give @s roguecraft:gold_block_from_blasting_raw_gold_block
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_gold_block"}]}] run recipe give @s roguecraft:gold_block_from_smelting_raw_gold_block
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_iron_block"}]}] run recipe give @s roguecraft:iron_block_from_blasting_raw_iron_block
+execute as @a[nbt={Inventory:[{id:"minecraft:raw_iron_block"}]}] run recipe give @s roguecraft:iron_block_from_smelting_raw_iron_block
+execute as @a[nbt={Inventory:[{id:"minecraft:furnace"}]}] run recipe give @s minecraft:blast_furnace
