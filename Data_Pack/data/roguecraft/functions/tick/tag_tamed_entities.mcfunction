@@ -1,0 +1,3 @@
+execute as @e[type=#roguecraft:tameable,distance=..16,tag=!VengefulSpectreImmune] if data entity @s Owner run tag @s add VengefulSpectreImmune
+execute as @e[type=minecraft:fox,distance=..16,tag=!VengefulSpectreImmune,nbt=!{Trusted:[]}] run tag @s add VengefulSpectreImmune
+execute as @e[type=minecraft:ocelot,distance=..16,tag=!VengefulSpectreImmune,nbt={Trusting:1b}] run tag @s add VengefulSpectreImmune

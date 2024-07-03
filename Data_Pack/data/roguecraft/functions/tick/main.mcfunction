@@ -21,6 +21,7 @@ execute if data storage roguecraft:master {run_active:1} if entity @a[tag=garden
 execute if data storage roguecraft:master {run_active:1} run function roguecraft:tick/true_run
 execute if entity @a[gamemode=!adventure] run function roguecraft:tick/run
 execute if entity @a[tag=victory] run function roguecraft:tick/final
+execute at @a[gamemode=!adventure] run function roguecraft:tick/tag_tamed_entities
 
 #custom recipes
 execute as @a[nbt={Inventory:[{id:"minecraft:raw_copper_block"}]}] run recipe give @s roguecraft:copper_block_from_blasting_raw_copper_block
