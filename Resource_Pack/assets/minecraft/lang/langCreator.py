@@ -134,6 +134,7 @@ supported = [
     "da_dk",
     "de_de",
     "en_us",
+    "fr_fr",
     "lol_us",
     "nl_nl",
     "pt_br",
@@ -146,6 +147,6 @@ with open("en_us.json","r") as f:
     sourceText = f.read()
 
 for i in languages:
-    if (not i in supported):
+    if i not in supported:
         with open(f"{i}.json","w") as f:
             f.write(sourceText)

@@ -2,6 +2,7 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Pontos de Skill",
   "block.minecraft.structure_block": "Pérola de Skill",
+  "block.minecraft.command_block": "Skill Gem Block",
   "death.attack.generic.item": "%1$s descobriu que dá pra matar os brothers",
 
   "roguecraft.generic.cost": "Custo",
