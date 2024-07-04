@@ -1,4 +1,3 @@
-
 # Roguecraft Community Fixes
 [Roguecraft](https://modrinth.com/datapack/rogue-craft) by MonoCode is a data pack that aims to turn Minecraft into a Roguelite game by centering the game loop around runs. Each run, your goal is to defeat the Ender Dragon, but also to collect skillpoints to become more powerful in future runs. Once every player has died, you are sent back to the hub to prepare for the next run.
 
@@ -7,23 +6,24 @@ Roguecraft Community Fixes is a community version of the pack aiming to fix bugs
 You can join the MonoCode's Discord server [here](https://discord.gg/d5FxfTYUqQ).
 
 
-
 # Full Changelog
 ## Fixes
-- [Advancement textures not being applied when using the EatingAnimation mod](https://discord.com/channels/1114531442052059168/1256420376247013500).
+- [Advancement textures are not applied when using the EatingAnimation mod](https://discord.com/channels/1114531442052059168/1256420376247013500).
 - Missing `empty.ogg` music file.
 - [Recipes parsing errors](https://discord.com/channels/1114531442052059168/1195827634941218826).
-- Ability items not being unbreakable.
-- [Compass not pointing to nether entry after killing the Wildfire when overworld chunks are unloaded](https://discord.com/channels/1114531442052059168/1257161216866910289).
-- Gamemode auto-switching to adventure in the hub while in dev mode (by Pengu).
-- [Unbreakable Flint and Steel getting cleared when used on a Creeper](https://discord.com/channels/1114531442052059168/1252575711663755375).
-- [Vengeful Spectre targetting tamed and trusting entities](https://discord.com/channels/1114531442052059168/1255982574493241435).
-- Dragon's lightning_endermen attack failing because of distance parameter.
-- Experience Orbs not getting cleared on End reset.
+- Ability items are not unbreakable.
+- [Compass doesn't point to Nether entry after killing the Wildfire when Overworld chunks are unloaded](https://discord.com/channels/1114531442052059168/1257161216866910289).
+- Gamemode auto-switches to adventure in the hub while in dev mode (by Pengu).
+- [Unbreakable Flint and Steel gets cleared when used on a Creeper](https://discord.com/channels/1114531442052059168/1252575711663755375).
+- [Vengeful Spectre targets tamed and trusting entities](https://discord.com/channels/1114531442052059168/1255982574493241435).
+- Dragon's lightning_endermen attack fails because of distance parameter (by @TheLotusElise).
+- Experience Orbs do not get cleared on End reset.
+- Players are not properly healed when starting a run.
 ## Additions
 - French Translation.
 - Recipes for smelting/blasting Raw Copper Block, Raw Iron Block and Raw Gold Block.
 - Skill Gem Block and related recipes (by @PhantomDergwulf).
+
 
 # Contributing
 Contributions are welcome!
