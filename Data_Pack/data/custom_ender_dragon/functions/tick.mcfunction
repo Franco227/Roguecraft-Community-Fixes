@@ -103,7 +103,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=lightning_ring] run execute a
 execute at @e[type=minecraft:area_effect_cloud,tag=lightning_ring] positioned over motion_blocking run particle minecraft:dust 0.73 0 1 1.5 ~ ~ ~ 0 0 0 1 1
 
 #lightning endermen
-execute if entity @e[type=marker,tag=dragon_endermen] in the_end as @e[type=minecraft:enderman,distance=..1000] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~ 0 0 0 0.1 2
+execute if entity @e[type=marker,tag=dragon_endermen] in the_end as @e[type=minecraft:enderman] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~ 0 0 0 0.1 2
 
 #balls
 execute as @e[type=dragon_fireball,tag=balls] at @s positioned ~ 0 ~ if entity @s[distance=200..] run function custom_ender_dragon:p2/balls/main_2
