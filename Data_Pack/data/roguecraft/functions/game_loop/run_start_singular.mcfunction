@@ -1,5 +1,4 @@
 execute if data storage roguecraft:master {sp_loss:1} run scoreboard players set @s skillpoints 0
-effect give @s minecraft:saturation 1 100 true
 
 scoreboard players set @s smelt_iron 0
 scoreboard players set @s lava_bucket 0
@@ -24,8 +23,6 @@ advancement revoke @s only minecraft:nether/find_fortress
 advancement revoke @s only minecraft:nether/obtain_blaze_rod
 advancement revoke @s only minecraft:story/enter_the_end
 
-effect give @s minecraft:resistance 2 4 true
-effect give @s minecraft:instant_health 40
 xp set @s 0 levels
 xp set @s 0 points
 tag @s remove hub

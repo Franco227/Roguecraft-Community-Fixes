@@ -8,6 +8,11 @@ $attribute @s minecraft:generic.knockback_resistance base set $(knockback_resist
 $attribute @s minecraft:generic.attack_speed base set $(attack_speed)
 $attribute @s minecraft:generic.attack_damage base set $(attack_damage)
 
+#heal players
+effect give @s minecraft:instant_health 1 20
+effect give @s minecraft:saturation 1 100 true
+effect give @s minecraft:resistance 2 4 true
+
 #effects
 execute unless score @s haste matches 0 run function roguecraft:upgrades/haste with entity @e[tag=main_storage,limit=1] data
 execute unless score @s jump_boost matches 0 run function roguecraft:upgrades/jump_boost with entity @e[tag=main_storage,limit=1] data
