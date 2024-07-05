@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "技能點",
   "block.minecraft.structure_block": "技能珍珠",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    背包組合",
 
   "roguecraft.generic.loadout": "背包組合",
@@ -165,7 +164,7 @@
   "roguecraft.upgrade.name.dummy_upgrade": "測試用強化",
   
   "roguecraft.ability.name.ability_explosion": "區域轟炸",
-  "roguecraft.ability.name.ability_mining": "黑洞挖掘",
+  "roguecraft.ability.name.ability_mining": "高功率電鑽",
   "roguecraft.ability.name.ability_arrow_wave": "箭矢衝擊波",
   "roguecraft.ability.name.ability_liquid_walker": "冰火行者",
   "roguecraft.ability.name.ability_fireball": "火球術",
@@ -175,14 +174,14 @@
   "roguecraft.ability.name.ability_levitate": "輕飄飄",
   "roguecraft.ability.name.ability_dirt_walker": "土遁•天行",
   "roguecraft.ability.description.ability_explosion": "產生一道爆炸，對附近的地形和生物造成傷害",
-  "roguecraft.ability.description.ability_mining": "破壞一定半徑內所有方塊。警告：「包含通常無法破壞的方塊！」",
+  "roguecraft.ability.description.ability_mining": "破壞你面朝方向的一片3*3區域",
   "roguecraft.ability.description.ability_arrow_wave": "向你的四周射出一圈箭矢。",
   "roguecraft.ability.description.ability_liquid_walker": "走在水上時形成冰面道路，走在岩漿上時形成玄武岩道路",
   "roguecraft.ability.description.ability_fireball": "發射一個撞到物體時會爆炸的火球",
   "roguecraft.ability.description.ability_heal": "回復少量生命值",
   "roguecraft.ability.description.ability_damage_sphere": "展開一道電能脈衝，對附近的生物造成大量傷害",
   "roguecraft.ability.description.ability_spikes": "在被擊中的前一瞬間施放的話能夠免疫此次傷害",
-  "roguecraft.ability.description.ability_levitate": "使你能夠打破重力的限制，獲得飄浮效果",
+  "roguecraft.ability.description.ability_levitate": "讓你能夠打破重力的限制，獲得飄浮效果",
   "roguecraft.ability.description.ability_dirt_walker": "自動將腳下空氣轉為泥土，使你可以走到半空中",
   
   "roguecraft.class.name.tank": "坦克",

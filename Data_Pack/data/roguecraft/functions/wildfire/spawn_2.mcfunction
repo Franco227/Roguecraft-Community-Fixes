@@ -1,10 +1,10 @@
 $summon marker ~ ~ ~ {Tags:["wildfire","$(boss_id)"],data:{boss_id:$(boss_id)}}
-$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:6}},Rotation:[0.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_0"]}
-$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:6}},Rotation:[90.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_1"]}
-$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:6}},Rotation:[180.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_2"]}
-$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:6}},Rotation:[270.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_3"]}
-$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:7}},Tags:["wildfire_body","$(boss_id)"]}
-$summon item_display ~ ~4 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:8}},Tags:["wildfire_head","$(boss_id)"]}
+$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":6}},Rotation:[0.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_0"]}
+$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":6}},Rotation:[90.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_1"]}
+$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":6}},Rotation:[180.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_2"]}
+$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":6}},Rotation:[270.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_3"]}
+$summon item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":7}},Tags:["wildfire_body","$(boss_id)"]}
+$summon item_display ~ ~4 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":8}},Tags:["wildfire_head","$(boss_id)"]}
 $execute as @e[tag=wildfire_head,tag=$(boss_id)] at @s run tp @s ~ ~ ~ facing entity @a[gamemode=!spectator,sort=nearest,limit=1]
 
 #hitboxes start
@@ -46,7 +46,7 @@ execute as @e[tag=boss_hitbox] run attribute @s generic.max_health base set 1000
 execute as @e[tag=boss_hitbox] run data merge entity @s {Health:1000f}
 #hitboxes end
 
-$execute as @e[tag=$(boss_id)] unless data entity @s {CustomModelData:8} run data merge entity @s {transformation:{scale:[2.5f,2.5f,2.5f]}}
+$execute as @e[tag=$(boss_id)] unless data entity @s {item:{components:{"minecraft:custom_model_data":8}}} run data merge entity @s {transformation:{scale:[2.5f,2.5f,2.5f]}}
 $data merge entity @e[tag=$(boss_id),tag=wildfire_head,limit=1] {transformation:{scale:[1f,1f,1f]}}
 
 execute store result storage roguecraft:master random int 1 run random value 0..99

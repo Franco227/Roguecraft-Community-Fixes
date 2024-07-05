@@ -15,7 +15,7 @@ execute store result score @s fatum run data get entity @s data.fatum
 
 $summon minecraft:item_display ~ ~ ~ {item:{Count:1,id:"minecraft:$(item_display)"},Rotation:[$(rotation).0f,0.0f]}
 execute as @e[type=item_display,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ ~180 ~
-$execute positioned ~ ~1.75 ~ unless entity @e[type=item_display,tag=lock,distance=..1.5] run summon item_display ~ ~ ~ {item:{id:"totem_of_undying",Count:1b,tag:{CustomModelData:403}},Rotation:[$(rotation).0f,0.0f],Tags:["lock"]}
+$execute positioned ~ ~1.75 ~ unless entity @e[type=item_display,tag=lock,distance=..1.5] run summon item_display ~ ~ ~ {item:{id:"totem_of_undying",Count:1b,components:{"minecraft:custom_model_data":403}},Rotation:[$(rotation).0f,0.0f],Tags:["lock"]}
 $summon minecraft:text_display ~ ~0.6 ~ {text:'[{"translate":"roguecraft.upgrade.name.$(name)"},{"text":"\\n"},{"translate":"roguecraft.generic.cost"},{"text":": $(cost)✦"}]',Rotation:[$(rotation).0f,0.0f]}
 $summon minecraft:interaction ~ ~-0.5 ~ {Tags:["upgrade_shop"],Rotation:[$(rotation).0f,0.0f]}
 

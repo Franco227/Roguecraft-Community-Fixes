@@ -1,7 +1,7 @@
 tag @s add current_main
 
-execute unless entity @a[tag=restart] if entity @a[tag=!current_main,gamemode=!spectator] run tellraw @a[tag=!garden] {"translate":"roguecraft.chat_messages.restart_first","color":"yellow","bold":false,"with":[{"selector":"@s"}]}
-execute if entity @a[tag=restart] if entity @a[tag=!current_main,gamemode=!spectator] unless entity @s[tag=restart] run tellraw @a[tag=!garden] {"translate":"roguecraft.chat_messages.restart","color":"yellow","bold":false,"with":[{"selector":"@s"}]}
+execute unless entity @a[tag=restart] if entity @a[tag=!current_main,gamemode=!spectator] run tellraw @a[tag=!garden] {"translate":"roguecraft.chat_messages.restart_first","color":"yellow","bold":false,"with":[{"selector":"@s"}],"clickEvent":{"action":"run_command","value":"/trigger restart_run"}}
+execute if entity @a[tag=restart] if entity @a[tag=!current_main,gamemode=!spectator] unless entity @s[tag=restart] run tellraw @a[tag=!garden] {"translate":"roguecraft.chat_messages.restart","color":"yellow","bold":false,"with":[{"selector":"@s"}],"clickEvent":{"action":"run_command","value":"/trigger restart_run"}}
 execute if entity @a[tag=restart] if entity @a[tag=!current_main,gamemode=!spectator] if entity @s[tag=restart] run tellraw @s[tag=!garden] {"translate":"roguecraft.chat_messages.restart_error","color":"yellow","bold":false}
 
 tag @s add restart

@@ -12,7 +12,7 @@
         "target": "this",
         "score": "looting"
       },
-      "minecraft:sweeping": {
+      "minecraft:sweeping_edge": {
         "type": "minecraft:score",
         "target": "this",
         "score": "sweeping"

@@ -12,6 +12,6 @@ $execute unless score @s class matches $(id) unless entity @e[tag=unbind] run te
 $execute unless entity @e[tag=unbind] run scoreboard players set @s class $(id)
 function roguecraft:infinite_garden/hub/set_inventory
 
-execute unless score @s class matches 1 run clear @s minecraft:warped_fungus_on_a_stick{CustomModelData:5}
+execute unless score @s class matches 1 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:unbreakable={},minecraft:custom_model_data=5]
 
 kill @e[tag=unbind]

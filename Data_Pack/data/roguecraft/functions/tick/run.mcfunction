@@ -8,10 +8,10 @@ execute as @a[gamemode=creative] run scoreboard players operation @s mana = @s m
 execute as @a[gamemode=creative] run scoreboard players operation @s soul_charge = @s max_soul_charge
 
 #healer class
-execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust 1 0 0 1 ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=-1}]
-execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust 1 0 0 1 ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=0}]
-execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust 1 0 0 1 ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=1}]
-execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust 1 0 0 1 ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=3}]
+execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=-1}]
+execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=0}]
+execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=1}]
+execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=3}]
 
 #vengeful spectre
 execute as @e[type=marker,tag=spectre] at @s run function roguecraft:ability/classes/vengeful_spectre/main with entity @s data
@@ -31,5 +31,6 @@ execute as @a[scores={parry_timer=1..,damage=1..,ability_spikes=1}] at @s run fu
 execute as @a[scores={parry_timer=1..,damage=1..,ability_spikes=2}] at @s run function roguecraft:ability/spikes/parry_2
 execute as @a[scores={parry_timer=1..,damage=1..,ability_spikes=3}] at @s run function roguecraft:ability/spikes/parry_3
 execute as @e[tag=player_fireball] at @s if entity @a[distance=..80] run particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1 0.025 5 force
+execute as @e[tag=gigadrill] at @s run function roguecraft:ability/mining/process_marker
 
 execute as @a[scores={parry_timer=0}] at @s run playsound minecraft:ui.toast.out master @s ~ ~ ~ 2 2

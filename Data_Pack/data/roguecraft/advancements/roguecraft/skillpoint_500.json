@@ -8,8 +8,11 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:stick",
-            "nbt": "{CustomModelData:9}"
+            "count": 1,
+            "id": "minecraft:stick",
+            "components": {
+                "minecraft:custom_model_data": 9
+            }
         },
         "frame": "challenge",
         "show_toast": true,

@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Fähigkeitspunkt",
   "block.minecraft.structure_block": "Fähigkeitsperle",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Ausstattung",
 
 
@@ -171,7 +170,7 @@
   "roguecraft.upgrade.name.dummy_upgrade": "Test-Upgrade",
   
   "roguecraft.ability.name.ability_explosion": "Explosion",
-  "roguecraft.ability.name.ability_mining": "Ausgrabung",
+  "roguecraft.ability.name.ability_mining": "Bohrer",
   "roguecraft.ability.name.ability_arrow_wave": "Pfeilschockwelle",
   "roguecraft.ability.name.ability_liquid_walker": "Flüssigläufer",
   "roguecraft.ability.name.ability_fireball": "Feuerball",
@@ -181,7 +180,7 @@
   "roguecraft.ability.name.ability_levitate": "Schweben",
   "roguecraft.ability.name.ability_dirt_walker": "Erdläufer",
   "roguecraft.ability.description.ability_explosion": "Zerstört mit einer mächtigen Explosion alles in deiner Umgebung",
-  "roguecraft.ability.description.ability_mining": "Baut in einem Radius alle Blöcke ab (auch unzerstörbare!)",
+  "roguecraft.ability.description.ability_mining": "Gräbt vor dir einen Tunnel aus",
   "roguecraft.ability.description.ability_arrow_wave": "Schießt eine Schockwelle aus Pfeilen",
   "roguecraft.ability.description.ability_liquid_walker": "Verwandelt Wasser zu aus und Lava zu Basalt",
   "roguecraft.ability.description.ability_fireball": "Schießt einen Feuerball, der bei Kollision explodiert",

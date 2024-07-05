@@ -1,7 +1,7 @@
-$execute as @s[scores={armor=1..}] run item replace entity @s armor.feet with $(armortype)boots{Unbreakable:true}
-$execute as @s[scores={armor=1..}] run item replace entity @s armor.legs with $(armortype)leggings{Unbreakable:true}
-$execute as @s[scores={armor=1..}] run item replace entity @s armor.chest with $(armortype)chestplate{Unbreakable:true}
-$execute as @s[scores={armor=1..}] run item replace entity @s armor.head with $(armortype)helmet{Unbreakable:true}
+$execute as @s[scores={armor=1..}] run item replace entity @s armor.feet with $(armortype)boots[minecraft:unbreakable={}]
+$execute as @s[scores={armor=1..}] run item replace entity @s armor.legs with $(armortype)leggings[minecraft:unbreakable={}]
+$execute as @s[scores={armor=1..}] run item replace entity @s armor.chest with $(armortype)chestplate[minecraft:unbreakable={}]
+$execute as @s[scores={armor=1..}] run item replace entity @s armor.head with $(armortype)helmet[minecraft:unbreakable={}]
 item modify entity @s armor.feet roguecraft:enchant_boots
 item modify entity @s armor.legs roguecraft:enchant_leggings
 item modify entity @s armor.chest roguecraft:enchant_chestplate

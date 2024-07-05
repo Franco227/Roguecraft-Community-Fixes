@@ -17,7 +17,7 @@ execute if score @e[type=marker,tag=emaster,limit=1] dragon_phase matches 1..2 r
 execute if score @e[type=marker,tag=emaster,limit=1] dragon_phase matches 1..2 in the_end positioned 0 100 0 run kill @e[type=area_effect_cloud,distance=..300]
 execute if score @e[tag=emaster,limit=1] dragon_phase matches 2 run scoreboard players add @e[tag=emaster,limit=1] dragon_p1t_health 5
 execute if score @e[tag=emaster,limit=1] dragon_phase matches 2 run execute store result bossbar minecraft:custom_dragon value run scoreboard players get @e[tag=emaster,limit=1] dragon_p1t_health
-execute if score @e[tag=emaster,limit=1] dragon_phase matches 2 run execute at @e[tag=end_crystal_marker] run particle minecraft:dust 0.73 0 1 5 ~ ~ ~ 2 30 2 1 1 force
+execute if score @e[tag=emaster,limit=1] dragon_phase matches 2 run execute at @e[tag=end_crystal_marker] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:4.0} ~ ~ ~ 2 30 2 1 1 force
 
 #dragon_phase 3
 execute if entity @e[type=minecraft:marker,tag=emaster,scores={dragon_phase=3,dragon_health=..560}] run function custom_ender_dragon:p2t/main
@@ -73,7 +73,7 @@ execute if entity @e[type=minecraft:marker,tag=emaster,scores={dragon_phase=14}]
 
 #phase 4
 execute at @e[tag=summon_portal] run particle minecraft:dragon_breath ~ ~ ~ 1.5 1.5 1.5 0 15 force
-execute at @e[tag=summon_portal] run particle minecraft:dust 1 0.5 1 2 ~ ~ ~ 1.5 1.5 1.5 0 15 force
+execute at @e[tag=summon_portal] run particle minecraft:dust{color:[1.0,0.5,1.0],scale:2.0} ~ ~ ~ 1.5 1.5 1.5 0 15 force
 execute as @e[tag=phase_4_mob] run data merge entity @s {Glowing:1b}
 execute store result bossbar phase_4_mobs value run execute if entity @e[tag=phase_4_mob]
 
@@ -86,7 +86,7 @@ execute at @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=Meteor] run fill 
 execute at @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=Meteor] run fill ~ ~-2 ~ ~ ~-2 ~ minecraft:amethyst_block replace end_stone
 execute as @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=Meteor] run kill
 execute at @e[type=minecraft:armor_stand,tag=Meteor] positioned over motion_blocking run particle minecraft:portal ~ ~ ~ 0 0 0 0.1 5 force
-execute at @e[type=minecraft:armor_stand,tag=Meteor] run particle minecraft:dust 0.73 0 1 3 ~ ~ ~ 0.5 0.5 0.5 0.01 5 force
+execute at @e[type=minecraft:armor_stand,tag=Meteor] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:3.0} ~ ~ ~ 0.5 0.5 0.5 0.01 5 force
 
 #tnt lines
 execute as @e[type=area_effect_cloud,tag=tnt,tag=z] run execute at @s run tp ~ ~ ~-2
@@ -94,13 +94,13 @@ execute as @e[type=area_effect_cloud,tag=tnt,tag=x] run execute at @s run tp ~-2
 execute as @e[type=area_effect_cloud,tag=tnt,tag=xzp] run execute at @s run tp ~-2 ~ ~-2
 execute as @e[type=area_effect_cloud,tag=tnt,tag=xzm] run execute at @s run tp ~-2 ~ ~2
 execute at @e[type=area_effect_cloud,tag=tnt] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:120,Tags:["tntsoon"]}
-execute in the_end as @e[type=minecraft:area_effect_cloud,tag=tntsoon] at @s positioned 0 ~ 0 if entity @s[distance=..100] at @s run particle minecraft:dust 0.73 0 1 1 ~ ~ ~ 0 0 0 1 1 force
+execute in the_end as @e[type=minecraft:area_effect_cloud,tag=tntsoon] at @s positioned 0 ~ 0 if entity @s[distance=..100] at @s run particle minecraft:dust{color:[0.73,0.0,1.0],scale:1.0} ~ ~ ~ 0 0 0 1 1 force
 execute at @e[type=area_effect_cloud,tag=tnt] run playsound minecraft:ui.toast.in master @a ~ ~ ~ 1 2
 execute at @e[type=minecraft:area_effect_cloud,tag=tntsoon,nbt={Age:100}] run summon creeper ~ ~ ~ {Fuse:0,Invulnerable:true,CustomName:' "Ender Dragon" '}
 
 #lightning ring
 execute as @e[type=minecraft:area_effect_cloud,tag=lightning_ring] run execute at @s run tp @s ^ ^ ^0.17 ~0.5 ~
-execute at @e[type=minecraft:area_effect_cloud,tag=lightning_ring] positioned over motion_blocking run particle minecraft:dust 0.73 0 1 1.5 ~ ~ ~ 0 0 0 1 1
+execute at @e[type=minecraft:area_effect_cloud,tag=lightning_ring] positioned over motion_blocking run particle minecraft:dust{color:[0.73,0.0,1.0],scale:1.5} ~ ~ ~ 0 0 0 1 1
 
 #lightning endermen
 execute if entity @e[type=marker,tag=dragon_endermen] in the_end as @e[type=minecraft:enderman] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~ 0 0 0 0.1 2
@@ -117,11 +117,10 @@ execute as @e[tag=auto_aim] run data merge entity @s {Motion:[0.0,0.0,0.0]}
 execute as @e[tag=auto_aim] at @s facing entity @a[sort=nearest,gamemode=!spectator,limit=1] feet run tp ^ ^ ^0.2
 execute at @e[tag=auto_aim] run particle minecraft:portal ~ ~ ~ 0.5 0.5 0.5 0 10 normal
 execute at @e[tag=auto_aim] run particle minecraft:portal ~ ~ ~ 0.5 0.5 0.5 0 5 force
-execute at @e[tag=auto_aim] run particle minecraft:dust 0.73 0 1 3 ~ ~ ~ 0.5 0.5 0.5 0.01 7 force
-execute at @e[tag=auto_aim,nbt={Age:399}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,ExplosionRadius:5,CustomName:' "Ender Dragon" '}
+execute at @e[tag=auto_aim] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:3.0} ~ ~ ~ 0.5 0.5 0.5 0.01 7 force
+execute at @e[tag=auto_aim,nbt={Age:399}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,ExplosionRadius:4,CustomName:' "Ender Dragon" '}
 execute at @e[type=area_effect_cloud,tag=auto_aim] run playsound minecraft:block.conduit.attack.target master @a ~ ~ ~ 0.6 0
-execute at @e[type=area_effect_cloud,tag=auto_aim] run execute as @a[distance=..3] run damage @s 2 minecraft:magic by @e[type=minecraft:ender_dragon,limit=1]
-execute at @e[tag=auto_aim] run particle minecraft:dust 0.73 0 1 2 ~ ~ ~ 5 5 5 0.02 3 normal
+execute at @e[tag=auto_aim] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:2.0} ~ ~ ~ 5 5 5 0.02 3 normal
 
 #split
 execute at @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=split_1] run summon creeper ~ ~ ~ {Fuse:0,Invulnerable:true,CustomName:' "Ender Dragon" ',ExplosionRadius:4}
@@ -144,9 +143,9 @@ execute at @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=split_2] run summ
 execute at @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=split_2] run summon minecraft:armor_stand ~ ~0.5 ~ {Motion:[-0.5,1.5,-0.5],Tags:["split_3"],Invulnerable:true,Invisible:1,ArmorItems:[{},{},{},{id:"minecraft:amethyst_block",Count:1b}],Small:1b}
 execute as @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=split_2] run kill
 execute as @e[type=minecraft:armor_stand,nbt={OnGround:1b},tag=split_3] run kill
-execute at @e[type=minecraft:armor_stand,tag=split_1] run particle minecraft:dust 0.73 0 1 3 ~ ~ ~ 0.5 0.5 0.5 0.01 5 force
-execute at @e[type=minecraft:armor_stand,tag=split_2] run particle minecraft:dust 0.73 0 1 3 ~ ~ ~ 0.5 0.5 0.5 0.01 3 force
-execute at @e[type=minecraft:armor_stand,tag=split_3] run particle minecraft:dust 0.73 0 1 3 ~ ~ ~ 0.5 0.5 0.5 0.01 1 force
+execute at @e[type=minecraft:armor_stand,tag=split_1] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:3.0} ~ ~ ~ 0.5 0.5 0.5 0.01 5 force
+execute at @e[type=minecraft:armor_stand,tag=split_2] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:3.0} ~ ~ ~ 0.5 0.5 0.5 0.01 3 force
+execute at @e[type=minecraft:armor_stand,tag=split_3] run particle minecraft:dust{color:[0.73,0.0,1.0],scale:3.0} ~ ~ ~ 0.5 0.5 0.5 0.01 1 force
 
 kill @e[type=ender_dragon,tag=!cdragon]
 execute as @e[tag=phase_4_mob,tag=!post_tag] at @s run function custom_ender_dragon:p4/dirt_fix

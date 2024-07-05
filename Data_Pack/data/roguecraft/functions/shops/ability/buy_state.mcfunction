@@ -1,4 +1,4 @@
-execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}} unless data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:1}}} run tag @s add bind
+execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}} unless data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_model_data":1}}} run tag @s add bind
 
 $execute if score @s[tag=!bind] $(upgrade) = @e[distance=..1,type=marker,sort=nearest,limit=1] level_max if score @e[distance=..1,type=marker,sort=nearest,limit=1] level_current matches 3 run tellraw @s {"translate":"roguecraft.chat_messages.error_max","italic":true,"color":"red","with":[{"translate":"roguecraft.chat_messages.ability"}]}
 $execute if score @s[tag=!bind] $(upgrade) = @e[distance=..1,type=marker,sort=nearest,limit=1] level_max unless score @e[distance=..1,type=marker,sort=nearest,limit=1] level_current matches 3 run tellraw @s {"translate":"roguecraft.chat_messages.error_max_incomplete","italic":true,"color":"red","with":[{"translate":"roguecraft.chat_messages.ability"}]}

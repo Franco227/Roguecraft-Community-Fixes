@@ -1,5 +1,6 @@
 data merge storage roguecraft:master {start:0}
 data merge storage roguecraft:master {stronghold:0b}
+data merge storage roguecraft:master {stronghold_generated:0b}
 data merge storage roguecraft:master {end:0}
 data merge storage roguecraft:master {end_generation_list:["c3","c2","d3","c4","b3","b2","d2","d4","b4","d1","c1","b1","a2","a3","a4","b5","c5","d5","e4","e3","e2","e1","a1","a5","e1"]}
 data merge storage roguecraft:master {run_active:1}

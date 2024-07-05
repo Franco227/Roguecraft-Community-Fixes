@@ -1,22 +1,24 @@
 [
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{CustomModelData:100}",
-        "conditions": 
-        [
-            {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": 
-                {
-                    "class": 4
-                }
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:custom_model_data": 100
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "class": 4
             }
+          }
         ]
-    },
+      },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{display:{Name:'{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.wooden\"}],\"italic\":false}'}}",
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.wooden\"}],\"italic\":false}"
+        },
         "conditions": 
         [
             {
@@ -38,8 +40,10 @@
         ]
     },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{display:{Name:'{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.stone\"}],\"italic\":false}'}}",
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.stone\"}],\"italic\":false}"
+        },
         "conditions": 
         [
             {
@@ -61,8 +65,10 @@
         ]
     },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{display:{Name:'{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.iron\"}],\"italic\":false}'}}",
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.iron\"}],\"italic\":false}"
+        },
         "conditions": 
         [
             {
@@ -84,8 +90,10 @@
         ]
     },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{display:{Name:'{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.diamond\"}],\"italic\":false}'}}",
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.diamond\"}],\"italic\":false}"
+        },
         "conditions": 
         [
             {
@@ -107,8 +115,10 @@
         ]
     },
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{display:{Name:'{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.netherite\"}],\"italic\":false}'}}",
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.netherite\"}],\"italic\":false}"
+        },
         "conditions": 
         [
             {

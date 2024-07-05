@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Point de Talent",
   "block.minecraft.structure_block": "Gemme de Talent",
-  "block.minecraft.command_block": "Bloc de Gemmes de Talent",
   "container.enderchest": "\uEff2\uF80A    Configuration",
 
   "roguecraft.generic.loadout": "Configuration",
@@ -102,11 +101,11 @@
   "roguecraft.chat_messages.ability_equip_a3": "droisième",
   "roguecraft.chat_messages.ability_equip_a4": "quatrième",
   "roguecraft.chat_messages.ability_equip_error": "La compétence %s est déjà définie comme %s %s",
-  "roguecraft.chat_messages.class_deselect": "Vous avez désélectionné la %2$s %1$s",
-  "roguecraft.chat_messages.class": "classe",
-  "roguecraft.chat_messages.class_select": "Vous avez sélectionné la %2$s %1$s",
-  "roguecraft.chat_messages.class_buy": "Vous avez débloqué la %2$s %1$s",
-  "roguecraft.chat_messages.class_sell": "Vous avez retiré la %2$s %1$s",
+  "roguecraft.chat_messages.class_deselect": "Vous avez désélectionné la classe %s",
+  "roguecraft.chat_messages.class": "",
+  "roguecraft.chat_messages.class_select": "Vous avez sélectionné la classe %s",
+  "roguecraft.chat_messages.class_buy": "Vous avez débloqué la classe %s",
+  "roguecraft.chat_messages.class_sell": "Vous avez retiré la classe %s",
   
   "roguecraft.chat_messages.unlock_upgrades": "Vous avez débloqué de nouvelles améliorations en vainquant un boss!",
   

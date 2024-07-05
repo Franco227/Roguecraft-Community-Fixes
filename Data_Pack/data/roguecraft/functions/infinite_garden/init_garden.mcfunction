@@ -1,8 +1,8 @@
 tag @s remove hub
 tag @s add garden
 
-team leave @s
 execute as @s[tag=ready] unless data storage roguecraft:master {start:1} unless data storage roguecraft:master {run_active:1} run function roguecraft:infinite_garden/hub/ready/unready
+team leave @s
 
 effect clear @s
 effect give @s minecraft:instant_health 10 0 true

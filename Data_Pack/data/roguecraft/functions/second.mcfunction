@@ -1,5 +1,5 @@
 #advancements
-execute as @a[advancements={roguecraft:infinite_garden/all_dummy=true,roguecraft:roguecraft/avatar=true,roguecraft:roguecraft/completion=true,roguecraft:roguecraft/difficulty_20=true,roguecraft:roguecraft/end_portal_destroyed=true,roguecraft:infinite_garden/full_defense=true,roguecraft:roguecraft/instant_delivery=true,roguecraft:roguecraft/instant_regret=true,roguecraft:roguecraft/low_health_parry=true,roguecraft:infinite_garden/max_health=true,roguecraft:roguecraft/prevent_death=true,roguecraft:roguecraft/root=true,roguecraft:roguecraft/run_complete=true,roguecraft:roguecraft/skillpoint_1=true,roguecraft:roguecraft/skillpoint_100=true,roguecraft:roguecraft/speedrun=true,roguecraft:roguecraft/first_ability=true,roguecraft:roguecraft/skillpoint_500=true,roguecraft:roguecraft/wildfire=true,roguecraft:roguecraft/world_record=true,roguecraft:infinite_garden/chester=true,roguecraft:infinite_garden/destroy_hub=true,roguecraft:infinite_garden/infinite_garden_void=true,roguecraft:infinite_garden/keep_inventory=true,roguecraft:roguecraft/true_completion=false}] run advancement grant @s only roguecraft:roguecraft/true_completion
+execute as @a[advancements={roguecraft:infinite_garden/all_dummy=true,roguecraft:roguecraft/avatar=true,roguecraft:roguecraft/completion=true,roguecraft:roguecraft/difficulty_20=true,roguecraft:infinite_garden/full_defense=true,roguecraft:roguecraft/instant_delivery=true,roguecraft:roguecraft/instant_regret=true,roguecraft:roguecraft/low_health_parry=true,roguecraft:infinite_garden/max_health=true,roguecraft:roguecraft/prevent_death=true,roguecraft:roguecraft/root=true,roguecraft:roguecraft/run_complete=true,roguecraft:roguecraft/skillpoint_1=true,roguecraft:roguecraft/skillpoint_100=true,roguecraft:roguecraft/speedrun=true,roguecraft:roguecraft/first_ability=true,roguecraft:roguecraft/skillpoint_500=true,roguecraft:roguecraft/wildfire=true,roguecraft:roguecraft/world_record=true,roguecraft:infinite_garden/chester=true,roguecraft:infinite_garden/destroy_hub=true,roguecraft:infinite_garden/infinite_garden_void=true,roguecraft:infinite_garden/keep_inventory=true,roguecraft:roguecraft/true_completion=false}] run advancement grant @s only roguecraft:roguecraft/true_completion
 
 #mana
 execute as @a run scoreboard players operation @s mana += @s mana_regen
@@ -7,7 +7,6 @@ execute as @a if score @s class matches 1 run scoreboard players add @s mana 5
 execute as @a if score @s mana > @s max_mana run scoreboard players operation @s mana = @s max_mana
 execute as @e[tag=id,type=marker] run function roguecraft:mana_bar_test with entity @s data
 
-execute as @a[tag=hub] run function roguecraft:hubclear
 execute if entity @a[tag=!hub,tag=!garden] if data storage roguecraft:master {bedrock_platform_left:1} unless entity @a[tag=victory] run scoreboard players add @e[tag=master,type=marker] difficulty 1
 execute store result bossbar minecraft:difficulty value run scoreboard players get @e[type=marker,tag=master,limit=1] difficulty
 execute if score @e[type=marker,tag=master,limit=1] difficulty >= @e[type=marker,tag=master,limit=1] difficulty_val_max run function roguecraft:increase_difficulty
@@ -38,6 +37,9 @@ execute if data storage roguecraft:master {bedrock_platform_left:0} as @a[tag=!g
 
 #speedruns
 execute if entity @a if score @e[type=minecraft:marker,tag=master,limit=1] run_number matches 1.. run function roguecraft:speedrun/update_speedrun_timer
+
+#ender dragon
+execute at @e[type=area_effect_cloud,tag=auto_aim] run execute as @a[distance=..3] run damage @s 4 minecraft:magic by @e[type=minecraft:ender_dragon,limit=1]
 
 #triggers
 execute as @a if entity @s[tag=!hub,tag=!garden] run scoreboard players reset @s new_world_timer

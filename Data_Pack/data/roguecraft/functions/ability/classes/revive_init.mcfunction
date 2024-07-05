@@ -6,6 +6,8 @@ scoreboard players remove @s speed 1
 scoreboard players remove @s jump_boost 1
 scoreboard players remove @s resistance 1
 scoreboard players remove @s haste 1
+scoreboard players remove @s[scores={class=3}] defense 50
+scoreboard players remove @s[scores={class=4}] defense 10
 
 execute store result entity @e[tag=main_storage,limit=1] data.defense int 1 run scoreboard players get @s defense
 execute store result entity @e[tag=main_storage,limit=1] data.max_health int 1 run scoreboard players get @s current_health
@@ -19,6 +21,8 @@ execute store result entity @e[tag=main_storage,limit=1] data.class int 1 run sc
 scoreboard players remove @s current_strength 1
 execute store result entity @e[tag=main_storage,limit=1] data.current_strength int 1 run scoreboard players get @s current_strength
 
+scoreboard players add @s[scores={class=3}] defense 50
+scoreboard players add @s[scores={class=4}] defense 10
 scoreboard players add @s speed 1
 scoreboard players add @s jump_boost 1
 scoreboard players add @s resistance 1

@@ -120,6 +120,15 @@ scoreboard objectives add dirt_timer dummy
 scoreboard objectives add liquid_timer dummy
 scoreboard objectives add lava_timer dummy
 
+scoreboard objectives add gigadrill_range_1 dummy
+scoreboard objectives add gigadrill_range_2 dummy
+scoreboard objectives add gigadrill_range_3 dummy
+scoreboard objectives add gigadrill_range_current dummy
+
+scoreboard players set @s gigadrill_range_1 8
+scoreboard players set @s gigadrill_range_2 16
+scoreboard players set @s gigadrill_range_3 30
+
 #skillpoints
 scoreboard objectives add skillpoints dummy
 scoreboard objectives add skillpoint_cache dummy
@@ -338,7 +347,6 @@ execute unless entity @e[type=marker,tag=master] run schedule function roguecraf
 gamerule spawnRadius 0
 gamerule playersSleepingPercentage 1
 gamerule keepInventory true
-gamerule sendCommandFeedback false
 gamerule commandModificationBlockLimit 1000000000
 
 schedule clear roguecraft:second

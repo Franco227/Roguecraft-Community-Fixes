@@ -88,13 +88,17 @@ scoreboard players set @s liquid_timer 0
 scoreboard players set @s lava_timer 0
 
 scoreboard players set @s skillpoints 0
-scoreboard players set @a level_max 0
-scoreboard players set @a y 0
+scoreboard players set @s level_max 0
+scoreboard players set @s y 0
 
-scoreboard players set @s version_num 1
+scoreboard players set @s gigadrill_range_1 8
+scoreboard players set @s gigadrill_range_2 16
+scoreboard players set @s gigadrill_range_3 30
 
-scoreboard players enable @a new_world_timer
-scoreboard players enable @a single_run_timer
+scoreboard players set @s version_num 2
+
+scoreboard players enable @s new_world_timer
+scoreboard players enable @s single_run_timer
 
 #add bossbars
 
@@ -127,12 +131,17 @@ effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:speed infinite 7 true
 effect give @s minecraft:saturation infinite 0 true
 
-tellraw @s ["",{"text":"If you don't already have the resource pack, you can download it","color":"aqua"},{"text":" "},{"text":"here","color":"green","bold":true,"underlined":false,"clickEvent":{"action":"open_url","value":"https://dub.sh/resource-pack-121"}}]
+tellraw @s ["",{"text":"If you don't already have the resource pack, you can download it","color":"aqua"},{"text":" "},{"text":"here","color":"green","bold":true,"underlined":false,"clickEvent":{"action":"open_url","value":"https://dub.sh/resource-pack-122"}}]
 title @s subtitle {"translate":"roguecraft.bossbar.welcome_2","color":"aqua"}
 title @s title {"translate":"roguecraft.bossbar.welcome_1","color":"aqua"}
 execute in roguecraft:infinite_garden run tp @s 49 69 0 90 2
 playsound minecraft:block.beacon.activate master @s 0.50 125.00 30.50 0.5 1
 gamemode adventure @s
+
+recipe give @s roguecraft:skillpoint_1
+recipe give @s roguecraft:skillpoint_2
+recipe give @s roguecraft:skillpoint_3
+recipe give @s minecraft:blast_furnace
 
 function roguecraft:infinite_garden/hub/ender_chest/reset
 function roguecraft:infinite_garden/hub/check_inventory

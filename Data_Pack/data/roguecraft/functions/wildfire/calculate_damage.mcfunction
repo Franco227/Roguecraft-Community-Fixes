@@ -55,25 +55,25 @@ scoreboard players operation @s boss_health -= @s health_loss
 $execute if score @s health_loss matches 1.. store result bossbar wildfire_$(boss_id) value run scoreboard players get @s boss_health
 execute if score @s health_loss matches 1.. at @s run particle small_flame ~ ~2 ~ 0.05 2 0.1 0.5 15
 
-$execute if score @s shield_0_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{tag:{CustomModelData:9}}}
-$execute if score @s shield_0_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{tag:{CustomModelData:10}}}
-$execute if score @s shield_0_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{tag:{CustomModelData:11}}}
-$execute if score @s shield_0_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{tag:{CustomModelData:12}}}
+$execute if score @s shield_0_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{components:{"minecraft:custom_model_data":9}}}
+$execute if score @s shield_0_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{components:{"minecraft:custom_model_data":10}}}
+$execute if score @s shield_0_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{components:{"minecraft:custom_model_data":11}}}
+$execute if score @s shield_0_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_0,limit=1] {item:{components:{"minecraft:custom_model_data":12}}}
 
-$execute if score @s shield_1_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{tag:{CustomModelData:9}}}
-$execute if score @s shield_1_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{tag:{CustomModelData:10}}}
-$execute if score @s shield_1_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{tag:{CustomModelData:11}}}
-$execute if score @s shield_1_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{tag:{CustomModelData:12}}}
+$execute if score @s shield_1_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{components:{"minecraft:custom_model_data":9}}}
+$execute if score @s shield_1_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{components:{"minecraft:custom_model_data":10}}}
+$execute if score @s shield_1_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{components:{"minecraft:custom_model_data":11}}}
+$execute if score @s shield_1_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_1,limit=1] {item:{components:{"minecraft:custom_model_data":12}}}
 
-$execute if score @s shield_2_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{tag:{CustomModelData:9}}}
-$execute if score @s shield_2_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{tag:{CustomModelData:10}}}
-$execute if score @s shield_2_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{tag:{CustomModelData:11}}}
-$execute if score @s shield_2_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{tag:{CustomModelData:12}}}
+$execute if score @s shield_2_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{components:{"minecraft:custom_model_data":9}}}
+$execute if score @s shield_2_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{components:{"minecraft:custom_model_data":10}}}
+$execute if score @s shield_2_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{components:{"minecraft:custom_model_data":11}}}
+$execute if score @s shield_2_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_2,limit=1] {item:{components:{"minecraft:custom_model_data":12}}}
 
-$execute if score @s shield_3_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{tag:{CustomModelData:9}}}
-$execute if score @s shield_3_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{tag:{CustomModelData:10}}}
-$execute if score @s shield_3_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{tag:{CustomModelData:11}}}
-$execute if score @s shield_3_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{tag:{CustomModelData:12}}}
+$execute if score @s shield_3_health matches 90..119 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{components:{"minecraft:custom_model_data":9}}}
+$execute if score @s shield_3_health matches 60..89 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{components:{"minecraft:custom_model_data":10}}}
+$execute if score @s shield_3_health matches 30..59 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{components:{"minecraft:custom_model_data":11}}}
+$execute if score @s shield_3_health matches 1..29 run data merge entity @e[type=item_display,tag=$(boss_id),tag=shield_3,limit=1] {item:{components:{"minecraft:custom_model_data":12}}}
 
 $execute if entity @e[type=item_display,tag=$(boss_id),tag=shield_0] if score @s shield_0_health matches ..0 run function roguecraft:wildfire/destroy_shield_0 with entity @s data
 $execute if entity @e[type=item_display,tag=$(boss_id),tag=shield_1] if score @s shield_1_health matches ..0 run function roguecraft:wildfire/destroy_shield_1 with entity @s data

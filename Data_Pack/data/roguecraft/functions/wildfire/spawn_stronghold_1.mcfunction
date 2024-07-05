@@ -4,4 +4,4 @@ tellraw @a[tag=!garden,tag=!hub] {"translate":"roguecraft.chat_messages.strongho
 execute as @a[tag=!garden,tag=!hub] at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.3
 execute as @a[tag=!garden,tag=!hub] at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 2
 
-execute unless data storage roguecraft:master {stronghold:1b} run function roguecraft:wildfire/spawn_stronghold_2 with storage roguecraft:master Region
+execute if data storage roguecraft:master {stronghold:1b} run function roguecraft:wildfire/spawn_stronghold_2 with storage roguecraft:master Region

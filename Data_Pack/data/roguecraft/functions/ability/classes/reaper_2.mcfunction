@@ -1,6 +1,6 @@
 summon minecraft:marker ~ ~ ~ {Tags:["spectre","current_main"]}
 data modify entity @e[distance=..1,tag=current_main,tag=spectre,limit=1] data.owner set from entity @s UUID
-data modify entity @e[distance=..1,tag=current_main,tag=spectre,limit=1] data.target set from entity @e[distance=..16,type=!#roguecraft:reaper_excluded,tag=!VengefulSpectreImmune,sort=nearest,limit=1] UUID
+data modify entity @e[distance=..1,tag=current_main,tag=spectre,limit=1] data.target set from entity @e[distance=..16,type=!#roguecraft:reaper_excluded,tag=!tamed,sort=nearest,limit=1] UUID
 scoreboard players operation @e[distance=..1,tag=current_main,tag=spectre,limit=1] soul_charge = @s soul_charge
 scoreboard players operation @e[distance=..1,tag=current_main,tag=spectre,limit=1] soul_charge *= 3 int
 scoreboard players set @e[distance=..1,tag=current_main,tag=spectre,limit=1] damage 2
