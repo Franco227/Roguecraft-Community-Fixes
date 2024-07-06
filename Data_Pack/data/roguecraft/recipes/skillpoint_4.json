@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#i#",
+        "iPi",
+        "#i#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal_block"
+        },
+        "i": {
+            "item": "minecraft:copper_block"
+        },
+        "P": {
+            "item": "minecraft:command_block"
+        }
+    },
+    "result": {
+        "id": "minecraft:structure_void",
+        "count": 9
+    }
+}

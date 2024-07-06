@@ -149,6 +149,6 @@ with open("en_us.json","r") as f:
     sourceText = f.read()
 
 for i in languages:
-    if (not i in supported):
+    if i not in supported:
         with open(f"{i}.json","w") as f:
             f.write(sourceText)

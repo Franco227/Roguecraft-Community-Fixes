@@ -2,6 +2,7 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Pontos de Skill",
   "block.minecraft.structure_block": "Gema de Skill",
+  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Equipamentos",
 
   "roguecraft.generic.loadout": "Baú de Equipamentos",

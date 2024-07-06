@@ -2,6 +2,7 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Point de Talent",
   "block.minecraft.structure_block": "Gemme de Talent",
+  "block.minecraft.command_block": "Block de Gemmes de Talent",
   "container.enderchest": "\uEff2\uF80A    Configuration",
 
   "roguecraft.generic.loadout": "Configuration",

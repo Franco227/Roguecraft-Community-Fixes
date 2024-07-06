@@ -15,7 +15,8 @@
         "recipes": [
             "roguecraft:skillpoint_1",
             "roguecraft:skillpoint_2",
-            "roguecraft:skillpoint_3"
+            "roguecraft:skillpoint_3",
+            "roguecraft:skill_gem_block"
         ]
     }
 }

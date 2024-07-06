@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "igi",
+        "gPg",
+        "igi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:copper_block"
+        },
+        "g": {
+            "item": "minecraft:gold_block"
+        },
+        "P": {
+            "item": "minecraft:command_block"
+        }
+    },
+    "result": {
+        "id": "minecraft:structure_void",
+        "count": 18
+    }
+}

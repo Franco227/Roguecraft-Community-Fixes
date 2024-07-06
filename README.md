@@ -11,8 +11,8 @@ You can join the MonoCode's Discord server [here](https://discord.gg/d5FxfTYUqQ)
 - `v1.2.4.1`: **Experience Orbs do not get cleared on End reset.**
 - `v1.2.4.1`: **Players are not properly healed when starting a run.**
 ## Additions
-- `v1.2.4.2`: **Recipes for smelting/blasting Raw Copper Block, Raw Iron Block and Raw Gold Block.**
-- `v1.2.4.2`: **Skill Gem Block and related recipes (by [PhantomDergwulf](https://github.com/PhantomDergwulf)).**
+- `v1.2.4.1`: **Recipes for smelting/blasting Raw Copper Block, Raw Iron Block and Raw Gold Block.**
+- `v1.2.4.1`: **Skill Gem Block and related recipes (by [PhantomDergwulf](https://github.com/PhantomDergwulf)).**
 
 
 # Contributing
