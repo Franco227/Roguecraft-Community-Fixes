@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:raw_iron_block"
+                    ]
+                }]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "roguecraft:iron_block_from_blasting_raw_iron_block",
+            "roguecraft:iron_block_from_smelting_raw_iron_block"
+        ]
+    }
+}

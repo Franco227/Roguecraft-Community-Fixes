@@ -138,10 +138,6 @@ execute in roguecraft:infinite_garden run tp @s 49 69 0 90 2
 playsound minecraft:block.beacon.activate master @s 0.50 125.00 30.50 0.5 1
 gamemode adventure @s
 
-recipe give @s roguecraft:skillpoint_1
-recipe give @s roguecraft:skillpoint_2
-recipe give @s roguecraft:skillpoint_3
-recipe give @s minecraft:blast_furnace
 
 function roguecraft:infinite_garden/hub/ender_chest/reset
 function roguecraft:infinite_garden/hub/check_inventory
