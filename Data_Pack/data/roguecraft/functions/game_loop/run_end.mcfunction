@@ -11,7 +11,7 @@ team join not_ready @a[tag=!garden,tag=!hub]
 data merge storage roguecraft:master {run_active:0}
 data merge storage roguecraft:master {bosses_checked:0b}
 
-execute as @e[tag=id,type=marker] run function roguecraft:set_mana_bar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:set_mana_bar with entity @s data
 execute as @a[tag=!garden,tag=!hub] run function roguecraft:infinite_garden/hub/set_inventory
 
 title @a[tag=!garden,tag=!hub] title {"translate":"roguecraft.title.defeat","bold":true,"color":"dark_red"}
@@ -38,9 +38,9 @@ schedule clear custom_ender_dragon:p5/attack_timer_5s
 bossbar set minecraft:dragon players @a[tag=olkjahsoihaef]
 bossbar set minecraft:phase_4_mobs players @a[tag=olkjahsoihaef]
 
-execute as @e[tag=id,type=marker] run function roguecraft:ability/dirt_walker/disable_bossbar with entity @s data
-execute as @e[tag=id,type=marker] run function roguecraft:ability/liquid_walker/disable_bossbar with entity @s data
-execute as @e[tag=id,type=marker] run function roguecraft:ability/lava_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/dirt_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/liquid_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/lava_walker/disable_bossbar with entity @s data
 
 schedule function roguecraft:infinite_garden/hub/check_bosses 1s
 

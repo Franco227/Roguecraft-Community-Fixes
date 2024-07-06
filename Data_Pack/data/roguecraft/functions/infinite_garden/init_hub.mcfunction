@@ -4,8 +4,8 @@ function roguecraft:infinite_garden/hub/set_inventory
 scoreboard players set @s dirt_timer 0
 scoreboard players set @s liquid_timer 0
 
-execute if entity @a[scores={dirt_timer=0..}] as @e[tag=id,type=marker] run function roguecraft:ability/dirt_walker/update_bossbar with entity @s data
-execute if entity @a[scores={liquid_timer=0..}] as @e[tag=id,type=marker] run function roguecraft:ability/liquid_walker/update_bossbar with entity @s data
+execute if entity @a[scores={dirt_timer=0..}] as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/dirt_walker/update_bossbar with entity @s data
+execute if entity @a[scores={liquid_timer=0..}] as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/liquid_walker/update_bossbar with entity @s data
 
 tag @s remove garden
 tag @s add hub
@@ -21,7 +21,7 @@ effect give @s minecraft:saturation infinite 0 true
 execute as @s run attribute @s minecraft:generic.max_health base set 20
 damage @s 1 minecraft:generic_kill
 
-execute as @e[tag=id,type=marker] run function roguecraft:mana_bar_test with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:mana_bar_test with entity @s data
 
 gamemode adventure
 

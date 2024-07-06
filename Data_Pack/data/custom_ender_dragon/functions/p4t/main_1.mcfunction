@@ -1,4 +1,4 @@
-scoreboard players set @e[type=marker,tag=emaster] dragon_phase 12
+scoreboard players set @e[type=minecraft:marker,tag=emaster] dragon_phase 12
 
 kill @e[tag=summon_portal]
 particle minecraft:reverse_portal ~ ~ ~ 0 0 0 3 2000 force

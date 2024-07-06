@@ -7,7 +7,7 @@ execute as @s if data storage roguecraft:master {speedrun:{new_world_display:0b}
 execute as @s if data storage roguecraft:master {speedrun:{new_world_display:1b}} run tellraw @s {"translate":"roguecraft.chat_messages.enable_new_world_timer","color":"blue"}
 
 execute as @s if data storage roguecraft:master {speedrun:{new_world_display:0b}} run scoreboard players reset new_world_timer speedrun_timer
-execute as @s if data storage roguecraft:master {speedrun:{new_world_display:1b}} run scoreboard players operation new_world_timer speedrun_timer = @e[type=marker,tag=master,limit=1] new_world_timer
+execute as @s if data storage roguecraft:master {speedrun:{new_world_display:1b}} run scoreboard players operation new_world_timer speedrun_timer = @e[type=minecraft:marker,tag=master,limit=1] new_world_timer
 
 execute if data storage roguecraft:master {speedrun:{single_run_display:0b,new_world_display:1b}} run scoreboard objectives setdisplay sidebar speedrun_timer
 execute if data storage roguecraft:master {speedrun:{single_run_display:0b,new_world_display:0b}} run scoreboard objectives setdisplay sidebar

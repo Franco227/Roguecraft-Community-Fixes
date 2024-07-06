@@ -10,4 +10,4 @@ execute as @e[tag=current_main] run tag @s remove current_main
 execute unless block ~ ~1 ~ minecraft:end_portal unless block ~ ~1 ~ minecraft:end_portal_frame run setblock ~ ~1 ~ air destroy
 playsound minecraft:particle.soul_escape master @s ~ ~ ~ 2
 playsound minecraft:entity.ghast.hurt master @a ~ ~ ~ 0.05 0.5
-particle dust{color:[0.412,0.0,0.525],scale:4.0} ~ ~1 ~ 0.05 0.05 0.05 0.025 5 force
+particle minecraft:dust{color:[0.412,0.0,0.525],scale:4.0} ~ ~1 ~ 0.05 0.05 0.05 0.025 5 force

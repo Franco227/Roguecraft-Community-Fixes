@@ -1,4 +1,4 @@
-execute store result score @e[type=marker,tag=master,limit=1] infinite_garden_mob_count_1 run execute if entity @e[type=#roguecraft:infinite_garden_mobs,distance=..128]
-execute positioned ~ 63 ~ store result score @e[type=marker,tag=master,limit=1] infinite_garden_mob_count_2 run execute if entity @e[type=#roguecraft:infinite_garden_mobs,distance=..128]
+execute store result score @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_count_1 run execute if entity @e[type=#roguecraft:infinite_garden_mobs,distance=..128]
+execute positioned ~ 63 ~ store result score @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_count_2 run execute if entity @e[type=#roguecraft:infinite_garden_mobs,distance=..128]
 
-execute unless score @e[type=marker,tag=master,limit=1] infinite_garden_mob_count_1 > @e[type=marker,tag=master,limit=1] infinite_garden_mob_cap unless score @e[type=marker,tag=master,limit=1] infinite_garden_mob_count_2 > @e[type=marker,tag=master,limit=1] infinite_garden_mob_cap run function roguecraft:infinite_garden/mob_spawning_success
+execute unless score @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_count_1 > @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_cap unless score @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_count_2 > @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_mob_cap run function roguecraft:infinite_garden/mob_spawning_success

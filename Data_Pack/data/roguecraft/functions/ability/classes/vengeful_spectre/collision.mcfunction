@@ -1,6 +1,6 @@
 tp @e[tag=current_main,sort=nearest,limit=1]
 playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 0.25 0.8
-particle soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.25 25 force
+particle minecraft:soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.25 25 force
 scoreboard players remove @s soul_charge 1
 execute store result entity @s data.soul_charge int 0.33 run scoreboard players get @s soul_charge
 $execute unless entity @e[nbt=!{UUID:$(target)},distance=..16,type=!#roguecraft:reaper_excluded,tag=!tamed,sort=nearest,limit=1] run function roguecraft:ability/classes/vengeful_spectre/kill

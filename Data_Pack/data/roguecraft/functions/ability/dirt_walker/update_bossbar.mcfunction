@@ -1,2 +1,2 @@
-$execute store result bossbar dirt_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] dirt_timer
+$execute store result bossbar minecraft:dirt_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] dirt_timer
 $execute if score @a[tag=mana_$(id),limit=1] dirt_timer matches 0 run bossbar set minecraft:dirt_$(id) players @a[tag=ifyourelookingforeastereggsthenyouvecometotherightplace]

@@ -18,6 +18,6 @@ execute if score @s attack_cooldown matches ..0 if score @s last_attack matches 
 
 
 execute store result storage roguecraft:master random int 1 run random value 0..2
-execute at @e[type=marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:0} run playsound roguecraft:entity.wildfire.shoot_vocal_0 hostile @a ~ ~ ~ 1.5
-execute at @e[type=marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:1} run playsound roguecraft:entity.wildfire.shoot_vocal_1 hostile @a ~ ~ ~ 1.5
-execute at @e[type=marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:2} run playsound roguecraft:entity.wildfire.shoot_vocal_2 hostile @a ~ ~ ~ 1.5
+execute at @e[type=minecraft:marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:0} run playsound roguecraft:entity.wildfire.shoot_vocal_0 hostile @a ~ ~ ~ 1.5
+execute at @e[type=minecraft:marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:1} run playsound roguecraft:entity.wildfire.shoot_vocal_1 hostile @a ~ ~ ~ 1.5
+execute at @e[type=minecraft:marker,tag=wildfire,scores={boss_health=1..}] if data storage roguecraft:master {random:2} run playsound roguecraft:entity.wildfire.shoot_vocal_2 hostile @a ~ ~ ~ 1.5

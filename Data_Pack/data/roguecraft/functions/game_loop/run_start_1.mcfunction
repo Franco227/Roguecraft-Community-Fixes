@@ -1,10 +1,10 @@
 tag @a[tag=hub,tag=!garden] add ready_final
 execute store result storage roguecraft:master Region.X int 1 run scoreboard players get @e[tag=master,limit=1] region_x
 execute store result storage roguecraft:master Region.Z int 1 run scoreboard players get @e[tag=master,limit=1] region_z
-scoreboard players add @e[type=marker,tag=master] run_number 1
+scoreboard players add @e[type=minecraft:marker,tag=master] run_number 1
 data merge storage roguecraft:master {start:1}
 data merge storage roguecraft:master {bosses_checked:0b}
-scoreboard players set @e[type=marker,tag=master,limit=1] difficulty_val_max 450
+scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] difficulty_val_max 450
 
 execute as @a[tag=!garden] run function roguecraft:infinite_garden/hub/set_inventory
 

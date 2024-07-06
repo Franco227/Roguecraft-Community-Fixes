@@ -6,8 +6,8 @@ team leave @s
 
 effect clear @s
 effect give @s minecraft:instant_health 10 0 true
-effect give @s resistance infinite 4 true
-effect give @s night_vision infinite 0 true
+effect give @s minecraft:resistance infinite 4 true
+effect give @s minecraft:night_vision infinite 0 true
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:water_breathing infinite 0 true
 
@@ -18,7 +18,7 @@ tag @s add garden_items
 scoreboard players enable @s hub_tp
 damage @s 1 minecraft:generic_kill
 
-execute as @e[tag=id,type=marker] run function roguecraft:mana_bar_test with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:mana_bar_test with entity @s data
 gamemode survival
 
 title @s subtitle ""

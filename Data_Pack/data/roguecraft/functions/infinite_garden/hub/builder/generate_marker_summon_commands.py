@@ -20,4 +20,4 @@ for x in range(size):
 print(structures)
 
 for i in structures:
-    print(f'execute in roguecraft:infinite_garden run summon marker {i[1]} 56 {i[2]} {{Tags:["hub_builder"],data:{{id:{i[0]}}}}}')
+    print(f'execute in roguecraft:infinite_garden run summon minecraft:marker {i[1]} 56 {i[2]} {{Tags:["hub_builder"],data:{{id:{i[0]}}}}}')

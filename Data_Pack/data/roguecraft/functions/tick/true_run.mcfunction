@@ -2,7 +2,7 @@
 execute as @a[advancements={roguecraft:roguecraft/skillpoint_100=false},scores={skillpoints=100..}] run advancement grant @s only roguecraft:roguecraft/skillpoint_100
 execute as @a[advancements={roguecraft:roguecraft/skillpoint_500=false},scores={skillpoints=500..}] run advancement grant @s only roguecraft:roguecraft/skillpoint_500
 execute as @a[advancements={roguecraft:roguecraft/low_health_parry=false},scores={parry_timer=1..,damage=1..,temp_health=0..1}] run advancement grant @s only roguecraft:roguecraft/low_health_parry
-execute as @a[advancements={roguecraft:roguecraft/instant_delivery=false},scores={parry_timer=1..,damage=1..}] at @s on attacker if entity @s[type=ghast] run execute as @a[sort=nearest,limit=1] run advancement grant @s only roguecraft:roguecraft/instant_delivery
+execute as @a[advancements={roguecraft:roguecraft/instant_delivery=false},scores={parry_timer=1..,damage=1..}] at @s on attacker if entity @s[type=minecraft:ghast] run execute as @a[sort=nearest,limit=1] run advancement grant @s only roguecraft:roguecraft/instant_delivery
 scoreboard players remove @a adrenaline_advancement_timer 1
 execute as @a[advancements={roguecraft:roguecraft/instant_regret=false},scores={deaths=1..,adrenaline_advancement_timer=1..}] run advancement grant @s only roguecraft:roguecraft/instant_regret
 
@@ -12,10 +12,10 @@ execute if entity @e[tag=stronghold] if data storage roguecraft:master {strongho
 
 #wildfire
 execute if entity @e[tag=wildfire] run function roguecraft:tick/wildfire
-execute as @e[type=marker,tag=wildfire_particle_marker,tag=marked] at @s run function roguecraft:wildfire/particle/process_1
-execute as @e[type=marker,tag=wildfire_particle_marker,tag=!marked] at @s run function roguecraft:wildfire/particle/init
-scoreboard players remove @e[type=marker,tag=wildfire_particle_marker] marker_distance 1
-execute as @e[type=marker,tag=wildfire_particle_marker,scores={marker_distance=..0}] at @s run function roguecraft:wildfire/particle/destroy
+execute as @e[type=minecraft:marker,tag=wildfire_particle_marker,tag=marked] at @s run function roguecraft:wildfire/particle/process_1
+execute as @e[type=minecraft:marker,tag=wildfire_particle_marker,tag=!marked] at @s run function roguecraft:wildfire/particle/init
+scoreboard players remove @e[type=minecraft:marker,tag=wildfire_particle_marker] marker_distance 1
+execute as @e[type=minecraft:marker,tag=wildfire_particle_marker,scores={marker_distance=..0}] at @s run function roguecraft:wildfire/particle/destroy
 execute at @e[tag=wildfire_particle] run particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0 5
 execute at @e[tag=wildfire_particle,sort=random,limit=1] run playsound minecraft:block.fire.ambient master @a ~ ~ ~ 0.15 2
 
@@ -50,9 +50,9 @@ execute as @a[gamemode=!spectator,gamemode=!adventure,advancements={story/enter_
 #execute as @a[gamemode=!spectator,gamemode=!adventure,advancements={story/enter_the_end=true},scores={enter_end=0}] run function roguecraft:skillpoints/enter_end
 
 #custom ender dragon
-execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in the_end if loaded 0 0 0 run forceload add -100 -100 100 100
-execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in the_end if loaded 0 0 0 run tag @e[type=ender_dragon] remove cdragon
-execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in the_end if loaded 0 0 0 run schedule function roguecraft:activate_end 5t append
+execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in minecraft:the_end if loaded 0 0 0 run forceload add -100 -100 100 100
+execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in minecraft:the_end if loaded 0 0 0 run tag @e[type=minecraft:ender_dragon] remove cdragon
+execute if data storage roguecraft:master {end:0} if entity @a[nbt={Dimension:"minecraft:the_end"}] in minecraft:the_end if loaded 0 0 0 run schedule function roguecraft:activate_end 5t append
 execute if data storage roguecraft:master {end:1} run function custom_ender_dragon:tick
 execute as @a[nbt={Dimension:"minecraft:the_end"},tag=!end] unless entity @a[tag=victory] run function roguecraft:enter_end
 

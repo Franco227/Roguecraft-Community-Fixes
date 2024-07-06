@@ -14,17 +14,17 @@ execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s 
 execute as @a[scores={class=2},tag=!hub,gamemode=!spectator,tag=!victory] at @s run particle minecraft:dust{color:[1.0,0.0,0.0],scale:1.0} ~ ~ ~ 5.5 5.5 5.5 0.01 4 force @a[scores={class=3}]
 
 #vengeful spectre
-execute as @e[type=marker,tag=spectre] at @s run function roguecraft:ability/classes/vengeful_spectre/main with entity @s data
+execute as @e[type=minecraft:marker,tag=spectre] at @s run function roguecraft:ability/classes/vengeful_spectre/main with entity @s data
 execute as @a[scores={mob_kills=1..}] run function roguecraft:calculate_soul_charge
 
 #abilities
 scoreboard players remove @a parry_timer 1
 scoreboard players remove @a dirt_timer 1
-execute if entity @a[scores={dirt_timer=0..}] as @e[tag=id,type=marker] run function roguecraft:ability/dirt_walker/update_bossbar with entity @s data
+execute if entity @a[scores={dirt_timer=0..}] as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/dirt_walker/update_bossbar with entity @s data
 execute at @a[scores={dirt_timer=0..},gamemode=!spectator] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 dirt replace air
 execute at @a[scores={dirt_timer=0..},gamemode=!spectator] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 dirt replace cave_air
 scoreboard players remove @a liquid_timer 1
-execute if entity @a[scores={liquid_timer=0..}] as @e[tag=id,type=marker] run function roguecraft:ability/liquid_walker/update_bossbar with entity @s data
+execute if entity @a[scores={liquid_timer=0..}] as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/liquid_walker/update_bossbar with entity @s data
 execute at @a[scores={liquid_timer=0..},gamemode=!spectator] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 frosted_ice replace water
 execute at @a[scores={liquid_timer=0..},gamemode=!spectator] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 basalt replace lava
 execute as @a[scores={parry_timer=1..,damage=1..,ability_spikes=1}] at @s run function roguecraft:ability/spikes/parry_1

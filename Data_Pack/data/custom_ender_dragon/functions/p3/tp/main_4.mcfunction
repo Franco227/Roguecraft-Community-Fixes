@@ -1,1 +1,1 @@
-kill @e[type=marker,tag=tp,sort=nearest]
+kill @e[type=minecraft:marker,tag=tp,sort=nearest]

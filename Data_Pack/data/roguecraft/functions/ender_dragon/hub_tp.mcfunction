@@ -7,7 +7,7 @@ execute in roguecraft:infinite_garden run playsound minecraft:entity.player.leve
 
 data merge storage roguecraft:master {run_active:0}
 
-execute as @e[tag=id,type=marker] run function roguecraft:set_mana_bar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:set_mana_bar with entity @s data
 execute as @a[tag=!hub,tag=!garden] run function roguecraft:infinite_garden/hub/set_inventory
 
 title @a[tag=!hub,tag=!garden] title {"translate":"roguecraft.title.victory","bold":true,"color":"green"}
@@ -31,9 +31,9 @@ schedule clear custom_ender_dragon:p5/attack_timer_5s
 bossbar set minecraft:dragon players @a[tag=olkjahsoihaef]
 bossbar set minecraft:phase_4_mobs players @a[tag=olkjahsoihaef]
 
-execute as @e[tag=id,type=marker] run function roguecraft:ability/dirt_walker/disable_bossbar with entity @s data
-execute as @e[tag=id,type=marker] run function roguecraft:ability/liquid_walker/disable_bossbar with entity @s data
-execute as @e[tag=id,type=marker] run function roguecraft:ability/lava_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/dirt_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/liquid_walker/disable_bossbar with entity @s data
+execute as @e[tag=id,type=minecraft:marker] run function roguecraft:ability/lava_walker/disable_bossbar with entity @s data
 
 bossbar set minecraft:difficulty players @s[tag=tjrrtjrtaesf]
 

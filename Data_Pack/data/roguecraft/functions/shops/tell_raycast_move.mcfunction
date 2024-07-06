@@ -3,8 +3,8 @@ execute if block ~ ~ ~ #roguecraft:raycast_obstructed run return 0
 tp @s ^ ^ ^0.25
 
 # Check for collisions
-execute if entity @e[type=marker,distance=..0.5,tag=shop] as @a[tag=current_player] run function roguecraft:shops/tell_result
-execute if entity @e[type=marker,distance=..0.5,tag=shop] run tag @s add hit
+execute if entity @e[type=minecraft:marker,distance=..0.5,tag=shop] as @a[tag=current_player] run function roguecraft:shops/tell_result
+execute if entity @e[type=minecraft:marker,distance=..0.5,tag=shop] run tag @s add hit
 
 
 # Decrease the number of steps remaining

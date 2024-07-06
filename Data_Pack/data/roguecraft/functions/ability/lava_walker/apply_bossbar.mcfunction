@@ -1,3 +1,3 @@
-$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_lava_bar] store result bossbar lava_$(id) max run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
-$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_lava_bar] store result bossbar lava_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
+$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_lava_bar] store result bossbar minecraft:lava_$(id) max run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
+$execute if entity @a[tag=mana_$(id),distance=..0.25,tag=apply_lava_bar] store result bossbar minecraft:lava_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
 $bossbar set minecraft:lava_$(id) players @a[tag=mana_$(id),tag=apply_lava_bar]

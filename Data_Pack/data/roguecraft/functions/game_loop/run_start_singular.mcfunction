@@ -9,7 +9,7 @@ scoreboard players set @s obtain_blaze_rod 0
 scoreboard players set @s enter_end 0
 scoreboard players set @s wildfire_defeated 0
 
-execute store result score @s run_number run scoreboard players get @e[type=marker,tag=master,limit=1] run_number
+execute store result score @s run_number run scoreboard players get @e[type=minecraft:marker,tag=master,limit=1] run_number
 
 scoreboard players set @s entry_x 40000000
 scoreboard players set @s entry_z 40000000

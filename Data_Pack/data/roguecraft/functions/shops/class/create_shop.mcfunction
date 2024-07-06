@@ -15,7 +15,7 @@ execute store result score @s fatum run data get entity @s data.fatum
 
 $summon minecraft:text_display ~ ~1.6 ~ {text:'[{"translate":"roguecraft.class.name.$(name)"},{"text":"\\n"},{"translate":"roguecraft.generic.cost"},{"text":": $(cost)✦"}]',Rotation:[$(rotation).0f,0.0f]}
 $summon minecraft:interaction ~ ~-0.5 ~ {Tags:["class_shop"],Rotation:[$(rotation).0f,0.0f],height:2}
-$execute positioned ~ ~2.75 ~ unless entity @e[type=item_display,tag=lock,distance=..1.5] run summon item_display ~ ~ ~ {item:{id:"totem_of_undying",Count:1b,components:{"minecraft:custom_model_data":403}},Rotation:[$(rotation).0f,0.0f],Tags:["lock"]}
+$execute positioned ~ ~2.75 ~ unless entity @e[type=minecraft:item_display,tag=lock,distance=..1.5] run summon minecraft:item_display ~ ~ ~ {item:{id:"totem_of_undying",Count:1b,components:{"minecraft:custom_model_data":403}},Rotation:[$(rotation).0f,0.0f],Tags:["lock"]}
 tp @s ~ ~0.5 ~
 
 function roguecraft:shops/set_max_level with entity @s data.max

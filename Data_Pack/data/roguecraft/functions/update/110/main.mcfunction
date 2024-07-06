@@ -4,12 +4,12 @@ execute as @a unless score @s ability_fireball matches 1..3 run scoreboard playe
 
 scoreboard players set @a version_num 1
 
-scoreboard players set @e[tag=master,type=marker] region_x -100000
-scoreboard players set @e[tag=master,type=marker] region_z 0
+scoreboard players set @e[tag=master,type=minecraft:marker] region_x -100000
+scoreboard players set @e[tag=master,type=minecraft:marker] region_z 0
 
-scoreboard players set @e[type=marker,tag=master,limit=1] region_dir 0
-scoreboard players set @e[type=marker,tag=master,limit=1] region_counter_max 1
-scoreboard players set @e[type=marker,tag=master,limit=1] region_counter 1
+scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] region_dir 0
+scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] region_counter_max 1
+scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] region_counter 1
 
 data merge storage roguecraft:master {Region:{X:-100000,Z:0}}
 data merge storage roguecraft:master {run_active:0}
@@ -35,32 +35,32 @@ team modify class_3 color white
 
 ##rebalancing
 #explosion
-scoreboard players set @e[type=marker,tag=master] ability_cost_0_1 40
-scoreboard players set @e[type=marker,tag=master] ability_cost_0_2 55
-scoreboard players set @e[type=marker,tag=master] ability_cost_0_3 65
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_0_1 40
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_0_2 55
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_0_3 65
 #heal
-scoreboard players set @e[type=marker,tag=master] ability_cost_1_1 40
-scoreboard players set @e[type=marker,tag=master] ability_cost_1_2 35
-scoreboard players set @e[type=marker,tag=master] ability_cost_1_3 30
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_1_1 40
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_1_2 35
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_1_3 30
 #fireball
-scoreboard players set @e[type=marker,tag=master] ability_cost_6_1 30
-scoreboard players set @e[type=marker,tag=master] ability_cost_6_2 25
-scoreboard players set @e[type=marker,tag=master] ability_cost_6_3 20
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_6_1 30
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_6_2 25
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_6_3 20
 #liquid walker
-scoreboard players set @e[type=marker,tag=master] ability_cost_8_1 40
-scoreboard players set @e[type=marker,tag=master] ability_cost_8_2 32
-scoreboard players set @e[type=marker,tag=master] ability_cost_8_3 25
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_8_1 40
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_8_2 32
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_8_3 25
 #dirt walker
-scoreboard players set @e[type=marker,tag=master] ability_cost_11_1 90
-scoreboard players set @e[type=marker,tag=master] ability_cost_11_2 85
-scoreboard players set @e[type=marker,tag=master] ability_cost_11_3 80
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_11_1 90
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_11_2 85
+scoreboard players set @e[type=minecraft:marker,tag=master] ability_cost_11_3 80
 #class abilities
-scoreboard players set @e[type=marker,tag=master] class_cost_0 160
-scoreboard players set @e[type=marker,tag=master] class_cost_2 0
-scoreboard players set @e[type=marker,tag=master] class_cost_3 0
+scoreboard players set @e[type=minecraft:marker,tag=master] class_cost_0 160
+scoreboard players set @e[type=minecraft:marker,tag=master] class_cost_2 0
+scoreboard players set @e[type=minecraft:marker,tag=master] class_cost_3 0
 
-scoreboard players set @e[type=marker,tag=master] revitalize_health 8
-scoreboard players set @e[type=marker,tag=master] adrenaline_health 6
+scoreboard players set @e[type=minecraft:marker,tag=master] revitalize_health 8
+scoreboard players set @e[type=minecraft:marker,tag=master] adrenaline_health 6
 
 ##upgrade decreses and refunds
 execute as @a if score @s max_health matches 21.. run function roguecraft:update/110/dec_health
@@ -80,5 +80,5 @@ execute as @a unless score @s version_num matches 1 run scoreboard players add @
 execute as @a unless score @s version_num matches 1 run scoreboard players add @s haste 1
 
 #regenerate hub
-kill @e[type=!player,tag=!master,tag=!id,tag=!constellation_line]
+kill @e[type=!minecraft:player,tag=!master,tag=!id,tag=!constellation_line]
 #place template roguecraft:hub -29 96 -14

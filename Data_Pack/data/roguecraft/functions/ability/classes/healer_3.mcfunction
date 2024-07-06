@@ -8,9 +8,9 @@ execute if score @a[gamemode=spectator,sort=nearest,limit=1] entry_z matches 400
 execute as @a[gamemode=spectator,sort=nearest,limit=1] run function roguecraft:ability/classes/revive_init
 tellraw @s[scores={toggle_ability_feedback=0}] {"translate":"roguecraft.chat_messages.use_ability","italic":true,"color":"red","with":[{"translate":"roguecraft.class_ability.healer"}]}
 
-execute store result score @e[type=marker,tag=master] temp_health run attribute @s minecraft:generic.max_health base get
-scoreboard players operation @e[type=marker,tag=master] temp_health -= @e[type=marker,tag=master] revitalize_health
-execute store result storage roguecraft:master temp_health int 1 run scoreboard players get @e[type=marker,tag=master,limit=1] temp_health
+execute store result score @e[type=minecraft:marker,tag=master] temp_health run attribute @s minecraft:generic.max_health base get
+scoreboard players operation @e[type=minecraft:marker,tag=master] temp_health -= @e[type=minecraft:marker,tag=master] revitalize_health
+execute store result storage roguecraft:master temp_health int 1 run scoreboard players get @e[type=minecraft:marker,tag=master,limit=1] temp_health
 function roguecraft:ability/classes/remove_health with storage roguecraft:master
 
 execute store result score @s current_health run attribute @s minecraft:generic.max_health base get

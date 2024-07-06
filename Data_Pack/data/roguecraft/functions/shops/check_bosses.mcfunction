@@ -6,5 +6,5 @@ execute if data entity @s data.tyrannus if data storage roguecraft:master {bosse
 execute if data entity @s data.anima if data storage roguecraft:master {bosses_defeated:{corpus:1b}} run function roguecraft:shops/upgrade {boss:"anima"}
 execute if data entity @s data.fatum if data storage roguecraft:master {bosses_defeated:{fatum:1b}} run function roguecraft:shops/upgrade {boss:"fatum"}
 
-scoreboard players operation @s run_number = @e[type=marker,tag=master,limit=1] run_number
+scoreboard players operation @s run_number = @e[type=minecraft:marker,tag=master,limit=1] run_number
 function roguecraft:shops/set_max_level with entity @s data.max

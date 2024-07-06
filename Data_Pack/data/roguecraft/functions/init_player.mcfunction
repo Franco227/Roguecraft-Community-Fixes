@@ -103,24 +103,24 @@ scoreboard players enable @s single_run_timer
 #add bossbars
 
 $tag @s add mana_$(id)
-$bossbar add mana_$(id) "Mana"
-$bossbar set mana_$(id) color blue
-$bossbar set mana_$(id) style notched_10
+$bossbar add minecraft:mana_$(id) "Mana"
+$bossbar set minecraft:mana_$(id) color blue
+$bossbar set minecraft:mana_$(id) style notched_10
 
-$bossbar add dirt_$(id) {"translate":"roguecraft.bossbar.dirt_walker"}
-$bossbar set dirt_$(id) color yellow
+$bossbar add minecraft:dirt_$(id) {"translate":"roguecraft.bossbar.dirt_walker"}
+$bossbar set minecraft:dirt_$(id) color yellow
 
-$bossbar add liquid_$(id) {"translate":"roguecraft.bossbar.liquid_walker"}
-$bossbar set liquid_$(id) color yellow
+$bossbar add minecraft:liquid_$(id) {"translate":"roguecraft.bossbar.liquid_walker"}
+$bossbar set minecraft:liquid_$(id) color yellow
 
-$bossbar add lava_$(id) "Lava Walker"
-$bossbar set lava_$(id) color yellow
+$bossbar add minecraft:lava_$(id) "Lava Walker"
+$bossbar set minecraft:lava_$(id) color yellow
 $summon minecraft:marker 0 100 0 {Tags:["id"],data:{id:$(id)}}
 
-$execute store result bossbar mana_$(id) max run scoreboard players get @s 100
-$execute store result bossbar mana_$(id) value run scoreboard players get @s 100
+$execute store result bossbar minecraft:mana_$(id) max run scoreboard players get @s 100
+$execute store result bossbar minecraft:mana_$(id) value run scoreboard players get @s 100
 
-scoreboard players add @e[tag=master,type=marker] id 1
+scoreboard players add @e[tag=master,type=minecraft:marker] id 1
 execute store result storage roguecraft:master id int 1 run scoreboard players get @e[type=minecraft:marker,tag=master,limit=1] id
 
 team join not_ready @s

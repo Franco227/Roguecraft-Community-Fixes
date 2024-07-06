@@ -29,7 +29,7 @@ summon minecraft:arrow ~-0.88167787843871 ~1 ~1.213525491562421 {Motion:[-0.8816
 summon minecraft:arrow ~-0.6101049646137002 ~1 ~1.3703181864639014 {Motion:[-0.6101049646137002,0.1,1.3703181864639014],life:1100,damage:3.0d}
 summon minecraft:arrow ~-0.3118675362266398 ~1 ~1.4672214011007083 {Motion:[-0.3118675362266398,0.1,1.4672214011007083],life:1100,damage:3.0d}
 
-execute as @e[type=arrow,distance=..2] run data modify entity @s Owner set from entity @a[sort=nearest,limit=1] UUID
+execute as @e[type=minecraft:arrow,distance=..2] run data modify entity @s Owner set from entity @a[sort=nearest,limit=1] UUID
 
 #tellraw @s[scores={toggle_ability_feedback=0}] {"text":"You cast Arrow Shockwave","italic":true,"color":"blue"}
 playsound minecraft:item.crossbow.shoot master @a ~ ~ ~ 0.6 0.85

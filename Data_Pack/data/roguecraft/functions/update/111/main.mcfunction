@@ -7,5 +7,5 @@ execute as @a if score @s defense matches 11.. run function roguecraft:update/11
 #tellraw @a ["",{"text":"If you don't already have the 1.1.1 resource pack, you can download it","color":"aqua"},{"text":" "},{"text":"here","color":"green","bold":true,"underlined":false,"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/rogue-craft/version/TC0dWIl8"}}]
 
 #regenerate hub
-#kill @e[type=!player,tag=!master,tag=!id,tag=!constellation_line]
+#kill @e[type=!minecraft:player,tag=!master,tag=!id,tag=!constellation_line]
 #place template roguecraft:hub -29 96 -14

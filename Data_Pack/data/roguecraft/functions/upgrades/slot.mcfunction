@@ -2,40 +2,40 @@ scoreboard players set @s temp 0
 
 # Add all possible items here
 #sword
-$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item replace entity @s container.$(selectedslot) with $(tooltype)sword[minecraft:unbreakable={}]
+$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item replace entity @s container.$(selectedslot) with minecraft:$(tooltype)sword[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_sword
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item modify entity @s container.$(selectedslot) roguecraft:set_scythe
 #pickaxe
-$execute as @s[scores={tool=2..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item replace entity @s container.$(selectedslot) with $(tooltype)pickaxe[minecraft:unbreakable={}]
+$execute as @s[scores={tool=2..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item replace entity @s container.$(selectedslot) with minecraft:$(tooltype)pickaxe[minecraft:unbreakable={}]
 $execute as @s[scores={tool=..1}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item replace entity @s container.$(selectedslot) with stone_pickaxe[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_tools
 #axe
-$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900001}}] run item replace entity @s container.$(selectedslot) with $(tooltype)axe[minecraft:unbreakable={}]
+$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900001}}] run item replace entity @s container.$(selectedslot) with minecraft:$(tooltype)axe[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900001}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_axe
 #shovel
-$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900004}}] run item replace entity @s container.$(selectedslot) with $(tooltype)shovel[minecraft:unbreakable={}]
+$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900004}}] run item replace entity @s container.$(selectedslot) with minecraft:$(tooltype)shovel[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900004}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_tools
 #hoe
-$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900002}}] run item replace entity @s container.$(selectedslot) with $(tooltype)hoe[minecraft:unbreakable={}]
+$execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900002}}] run item replace entity @s container.$(selectedslot) with minecraft:$(tooltype)hoe[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900002}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_tools
 
 #bow
 $execute as @s[scores={bow=1}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900007}}] run item replace entity @s container.$(selectedslot) with bow[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900007}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_bow
 #flint and steel
-$execute as @s[scores={flint_and_steel=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900010}}] run item replace entity @s container.$(selectedslot) with flint_and_steel[minecraft:max_damage=1000000,custom_data={unbreakable:1b}]
+$execute as @s[scores={flint_and_steel=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900010}}] run item replace entity @s container.$(selectedslot) with minecraft:flint_and_steel[minecraft:max_damage=1000000,custom_data={unbreakable:1b}]
 #comp ass
 $data modify storage roguecraft:master Region.selectedslot set value $(selectedslot)
 $execute as @s[scores={compass=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900014}}] run function roguecraft:upgrades/compass with storage roguecraft:master Region
 #bucket
-$execute as @s[scores={bucket=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900009}}] run item replace entity @s container.$(selectedslot) with bucket
+$execute as @s[scores={bucket=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900009}}] run item replace entity @s container.$(selectedslot) with minecraft:bucket
 #ender pearls
-$execute as @s[scores={pearls=1..},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900013}}] run function roguecraft:upgrades/amountslots {"slot":$(selectedslot),"itemid":"ender_pearl","amount":$(pearls)}
+$execute as @s[scores={pearls=1..},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900013}}] run function roguecraft:upgrades/amountslots {"slot":$(selectedslot),"itemid":"minecraft:ender_pearl","amount":$(pearls)}
 
 #golden apples
-$execute as @s[scores={golden_apple=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900016}}] run item replace entity @s container.$(selectedslot) with golden_apple 5
+$execute as @s[scores={golden_apple=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900016}}] run item replace entity @s container.$(selectedslot) with minecraft:golden_apple 5
 #enchanted golden apple
-$execute as @s[scores={enchanted_golden_apple=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900012}}] run item replace entity @s container.$(selectedslot) with enchanted_golden_apple
+$execute as @s[scores={enchanted_golden_apple=1},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900012}}] run item replace entity @s container.$(selectedslot) with minecraft:enchanted_golden_apple
 #food
 $execute as @s[scores={food=1..},tag=!garden] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900015}}] run item replace entity @s container.$(selectedslot) with $(foodtype) $(foodcount)
 

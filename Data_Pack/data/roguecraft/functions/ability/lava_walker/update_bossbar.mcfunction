@@ -1,2 +1,2 @@
-$execute store result bossbar lava_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
+$execute store result bossbar minecraft:lava_$(id) value run scoreboard players get @a[tag=mana_$(id),limit=1] lava_timer
 $execute if score @a[tag=mana_$(id),limit=1] lava_timer matches 0 run bossbar set minecraft:lava_$(id) players @a[tag=terra_lumina]

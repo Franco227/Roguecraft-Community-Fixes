@@ -6,7 +6,7 @@ data merge storage roguecraft:master {end_generation_list:["c3","c2","d3","c4","
 data merge storage roguecraft:master {run_active:1}
 data merge storage roguecraft:master {end_generated:0}
 data merge storage roguecraft:master {bedrock_platform_left:0}
-scoreboard players set @e[type=marker,tag=master] blaze_rods 0
+scoreboard players set @e[type=minecraft:marker,tag=master] blaze_rods 0
 
 $execute positioned $(X) 320 $(Z) positioned over world_surface run tp @a[tag=ready_final] ~ ~ ~
 $execute positioned $(X) 320 $(Z) positioned over world_surface run playsound minecraft:block.beacon.power_select master @a[tag=ready_final] ~ ~ ~ 1 2
@@ -21,15 +21,15 @@ title @a[tag=ready_final] title {"translate":"roguecraft.bossbar.run","with":[{"
 
 gamerule playersSleepingPercentage 0
 
-execute as @e[type=marker,tag=master] run function roguecraft:game_loop/shift_game_region
+execute as @e[type=minecraft:marker,tag=master] run function roguecraft:game_loop/shift_game_region
 $forceload remove $(X) $(Z)
-execute in the_nether run forceload add 0 0 -1 -1
+execute in minecraft:the_nether run forceload add 0 0 -1 -1
 
 bossbar set minecraft:difficulty players @a[tag=ready_final]
 bossbar set minecraft:difficulty name {"translate":"roguecraft.bossbar.difficulty_level","with":["1"]}
-scoreboard players set @e[type=marker,tag=master] difficulty 0
-scoreboard players set @e[type=marker,tag=master] difficulty_level 1
-scoreboard players set @e[type=marker,tag=master] single_run_timer 0
+scoreboard players set @e[type=minecraft:marker,tag=master] difficulty 0
+scoreboard players set @e[type=minecraft:marker,tag=master] difficulty_level 1
+scoreboard players set @e[type=minecraft:marker,tag=master] single_run_timer 0
 execute if data storage roguecraft:master {single_run_display:1b} run scoreboard players set single_run_timer speedrun_timer 0
 
 tag @a remove ready_final
