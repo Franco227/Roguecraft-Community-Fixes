@@ -5,4 +5,4 @@ execute in minecraft:the_end run place template custom_ender_dragon:end_island_a
 execute in minecraft:the_end run place template custom_ender_dragon:end_island_a1 60 0 -100
 execute in minecraft:the_end run place template custom_ender_dragon:end_island_a1 60 0 60
 
-data merge storage roguecraft:master {end_generated:1}
+data merge storage roguecraft:master {end_cleared:1b}

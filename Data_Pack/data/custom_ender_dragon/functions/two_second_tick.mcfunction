@@ -12,6 +12,6 @@ scoreboard players set @e[type=minecraft:ender_dragon,nbt={DragonPhase:7}] drago
 
 execute in minecraft:the_end positioned 0 70 0 if entity @a[distance=..100] as @e[type=minecraft:ender_dragon,scores={dragon_flight_timer=20..},limit=1] unless data entity @s {Health:1.0f} run data merge entity @s {DragonPhase:2}
 
-execute if data storage roguecraft:master {end_generated:0} in minecraft:the_end if loaded -140 127 -140 if loaded 140 127 140 run function custom_ender_dragon:clear_end/clear_end
+execute if data storage roguecraft:master {end_cleared:0b} in minecraft:the_end if loaded -140 127 -140 if loaded 140 127 140 run function custom_ender_dragon:clear_end/clear_end
 
 schedule function custom_ender_dragon:two_second_tick 40t

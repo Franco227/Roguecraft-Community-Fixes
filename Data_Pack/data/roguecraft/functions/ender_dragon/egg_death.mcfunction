@@ -26,6 +26,10 @@ execute if data storage roguecraft:master {speedrun:{single_run_display:1b}} run
 execute unless data storage roguecraft:master {bosses_defeated:{tyrannus:1b}} in roguecraft:infinite_garden run summon minecraft:marker 0 100 0 {Tags:["boss_defeated"]}
 data merge storage roguecraft:master {bosses_defeated:{tyrannus:1b}}
 
-effect give @a[tag=!garden,tag=!hub] minecraft:nausea infinite 0 true
+spreadplayers 0 0 0 5 false @a[tag=!garden,tag=!hub]
+execute as @a[tag=!garden,tag=!hub] run function roguecraft:ender_dragon/final_player_effects
+
+function roguecraft:reset_end
+
 schedule function roguecraft:infinite_garden/hub/check_bosses 8s
 schedule function roguecraft:ender_dragon/hub_tp 6s

@@ -1,6 +1,8 @@
 execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~
 execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:entity.ender_dragon.growl hostile @s ~ ~ ~
 
+kill @e[type=end_crystal]
+
 schedule clear custom_ender_dragon:p2/attack_timer
 
 schedule function custom_ender_dragon:p2t/tp_minor 10t append

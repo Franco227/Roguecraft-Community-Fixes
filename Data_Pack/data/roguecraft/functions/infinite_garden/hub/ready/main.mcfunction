@@ -1,5 +1,4 @@
 tag @s add current_main
-scoreboard players reset @s start_run
 
 execute as @s[tag=!ready_tagged,tag=tutorial_done,tag=!ready] run function roguecraft:infinite_garden/hub/ready/ready
 execute as @s[tag=!ready_tagged,tag=tutorial_done,tag=ready] if data storage roguecraft:master {start:1} run function roguecraft:infinite_garden/hub/ready/ready_error
