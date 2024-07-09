@@ -21,13 +21,7 @@ scoreboard players set @a[tag=!hub,tag=!garden] dirt_timer 0
 scoreboard players set @a[tag=!hub,tag=!garden] liquid_timer 0
 scoreboard players set @a[tag=!hub,tag=!garden] lava_timer 0
 
-schedule clear custom_ender_dragon:p2/attack_timer
-schedule clear custom_ender_dragon:p3/attack_timer
-schedule clear custom_ender_dragon:two_second_tick
-schedule clear custom_ender_dragon:quarter_second_tick
-schedule clear custom_ender_dragon:p5/attack_timer_10s
-schedule clear custom_ender_dragon:p5/attack_timer_15s
-schedule clear custom_ender_dragon:p5/attack_timer_5s
+function roguecraft:ender_dragon/reset_dragon_attacks
 bossbar set minecraft:dragon players @a[tag=olkjahsoihaef]
 bossbar set minecraft:phase_4_mobs players @a[tag=olkjahsoihaef]
 

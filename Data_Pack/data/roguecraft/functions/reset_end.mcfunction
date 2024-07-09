@@ -1,8 +1,10 @@
+function roguecraft:ender_dragon/reset_dragon_attacks
+
 kill @e[type=minecraft:ender_dragon,tag=!cdragon]
 kill @e[tag=phase_4_mob]
 kill @e[type=minecraft:interaction,tag=egg_interaction]
 kill @e[type=minecraft:block_display,tag=egg_block]
-execute in minecraft:the_end positioned 0 0 0 as @e[type=#roguecraft:post_enderdragon_removed,distance=..2000] at @s run tp ~ -100 ~
+execute in minecraft:the_end positioned 0 0 0 as @e[type=#roguecraft:post_enderdragon_removed,distance=..2000] run tp 0 -100 0
 execute in minecraft:the_end positioned 0 -100 0 as @e[type=#roguecraft:post_enderdragon_removed,distance=..100] run kill @s
 bossbar remove minecraft:phase_4_mobs
 
