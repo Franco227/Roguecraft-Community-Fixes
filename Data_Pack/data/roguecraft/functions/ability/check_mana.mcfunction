@@ -11,5 +11,5 @@ execute if score @s class matches 4 unless score @s soul_charge matches 1.. as @
 $execute unless score @s class matches 4 if score @s mana >= @e[type=minecraft:marker,tag=master,limit=1] ability_cost_$(temp_score_ability)_$(temp_score_level) run scoreboard players operation @s mana -= @e[type=minecraft:marker,tag=master,limit=1] ability_cost_$(temp_score_ability)_$(temp_score_level)
 execute if score @s class matches 4 if score @s soul_charge matches 1.. run scoreboard players remove @s soul_charge 1
 
-execute as @e[tag=id,type=minecraft:marker] run function roguecraft:mana_bar_test with entity @s data
+execute as @e[type=minecraft:marker,tag=id] run function roguecraft:mana_bar_test with entity @s data
 function roguecraft:ability/tell_1

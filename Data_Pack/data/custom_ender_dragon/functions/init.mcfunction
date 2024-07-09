@@ -1,8 +1,8 @@
 execute in minecraft:the_end run summon minecraft:marker 0 150 0 {Tags:["emaster"]}
-scoreboard players set @e[tag=emaster] dragon_phase 0
-scoreboard players set @e[tag=emaster] dragon_rng 0
-scoreboard players set @e[tag=emaster] dragon_p1t_health 0
-scoreboard players set @e[tag=emaster] dragon_health 1000
+scoreboard players set @e[type=minecraft:marker,tag=emaster] dragon_phase 0
+scoreboard players set @e[type=minecraft:marker,tag=emaster] dragon_rng 0
+scoreboard players set @e[type=minecraft:marker,tag=emaster] dragon_p1t_health 0
+scoreboard players set @e[type=minecraft:marker,tag=emaster] dragon_health 1000
 
 execute in minecraft:the_end positioned 0 100 0 at @e[type=minecraft:end_crystal,distance=..200] run summon minecraft:marker ~ ~ ~ {Tags:["end_crystal_marker"]}
 

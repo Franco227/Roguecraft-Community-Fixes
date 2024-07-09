@@ -24,6 +24,6 @@ execute in minecraft:the_end run summon minecraft:shulker 0 100 0 {Color:10,Tags
 execute in minecraft:the_end run summon minecraft:shulker 0 100 0 {Color:10,Tags:["dragon_minion"],DeathLootTable:"minecraft:empty"}
 execute in minecraft:the_end run summon minecraft:shulker 0 100 0 {Color:10,Tags:["dragon_minion"],DeathLootTable:"minecraft:empty"}
 
-execute in minecraft:the_end run spreadplayers 0 0 0 50 false @e[tag=dragon_minion]
+execute in minecraft:the_end run spreadplayers 0 0 0 50 false @e[type=minecraft:shulker,tag=dragon_minion]
 
 schedule function custom_ender_dragon:p3/attack_timer 5s

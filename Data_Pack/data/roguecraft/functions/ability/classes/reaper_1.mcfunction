@@ -8,4 +8,4 @@ execute if score @s soul_charge matches 1.. unless entity @e[distance=..16,type=
 
 execute if score @s soul_charge matches 1.. if entity @e[distance=..16,type=!#roguecraft:reaper_excluded,tag=!tamed,sort=nearest,limit=1] run scoreboard players set @s soul_charge 0
 
-execute as @e[tag=id,type=minecraft:marker] run function roguecraft:set_mana_bar with entity @s data
+execute as @e[type=minecraft:marker,tag=id] run function roguecraft:set_mana_bar with entity @s data

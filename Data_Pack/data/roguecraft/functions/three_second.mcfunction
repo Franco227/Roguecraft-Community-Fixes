@@ -1,7 +1,7 @@
-execute as @a at @s if entity @a[distance=..10,scores={class=2},gamemode=!spectator] run effect give @s[tag=!hub] minecraft:regeneration 3 0 true
+execute as @a at @s if entity @a[gamemode=!spectator,scores={class=2},distance=..10] run effect give @s[tag=!hub] minecraft:regeneration 3 0 true
 
 execute store result storage roguecraft:master difficulty int 1 run scoreboard players get @e[type=minecraft:marker,tag=master,limit=1] difficulty_level
-execute at @a as @e[distance=..64,tag=!buffed,type=#roguecraft:difficulty_impacted] unless data entity @s {CustomName:' "Ender Dragon" '} run function roguecraft:difficulty/apply_difficulty with storage roguecraft:master
+execute at @a as @e[type=#roguecraft:difficulty_impacted,tag=!buffed,distance=..64] unless data entity @s {CustomName:' "Ender Dragon" '} run function roguecraft:difficulty/apply_difficulty with storage roguecraft:master
 
 #execute as @a[scores={version_num=1..}] unless data storage roguecraft:master version_num store result storage roguecraft:master version_num int 1 run scoreboard players get @s version_num
 #execute unless data storage roguecraft:master version_num run function roguecraft:update/110/main
@@ -12,12 +12,12 @@ execute store result storage roguecraft:master difficulty_setting int 1 run diff
 execute if data storage roguecraft:master {difficulty_setting:0} run difficulty easy
 
 #infinite garden
-kill @e[tag=main_storage]
-execute store result score @e[tag=master,type=minecraft:marker,limit=1] infinite_garden_skillpoint_phase run data get storage roguecraft:master infinite_garden_skillpoint_phase
+kill @e[type=minecraft:marker,tag=main_storage]
+execute store result score @e[type=minecraft:marker,tag=master,limit=1] infinite_garden_skillpoint_phase run data get storage roguecraft:master infinite_garden_skillpoint_phase
 execute as @a[tag=garden] at @s run function roguecraft:infinite_garden/mob_spawning_init
-execute as @e[tag=shop] at @s if score @s run_number < @e[type=minecraft:marker,tag=master,limit=1] run_number run function roguecraft:shops/check_bosses
+execute as @e[type=minecraft:marker,tag=shop] at @s if score @s run_number < @e[type=minecraft:marker,tag=master,limit=1] run_number run function roguecraft:shops/check_bosses
 execute if entity @a[nbt={Dimension:"roguecraft:infinite_garden"}] run function roguecraft:infinite_garden/set_skillpoint_level
-execute if entity @a[nbt={Dimension:"roguecraft:infinite_garden"}] as @e[tag=infinite_garden_mob_marker] at @s run function roguecraft:infinite_garden/mob_spawning_check_sp
+execute if entity @a[nbt={Dimension:"roguecraft:infinite_garden"}] as @e[type=minecraft:marker,tag=infinite_garden_mob_marker] at @s run function roguecraft:infinite_garden/mob_spawning_check_sp
 
 execute in roguecraft:infinite_garden run playsound minecraft:block.beacon.ambient master @a 0 60 31 2 0.5
 
@@ -27,8 +27,8 @@ item replace entity @a[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom
 
 #tamed animal fix
 function roguecraft:tag_tamed_animals
-execute as @e[type=minecraft:fox,distance=..16,tag=!VengefulSpectreImmune,nbt=!{Trusted:[]}] run tag @s add tamed
-execute as @e[type=minecraft:ocelot,distance=..16,tag=!VengefulSpectreImmune,nbt={Trusting:1b}] run tag @s add tamed
+execute as @e[type=minecraft:fox,distance=..16,tag=!tamed,nbt=!{Trusted:[]}] run tag @s add tamed
+execute as @e[type=minecraft:ocelot,distance=..16,tag=!tamed,nbt={Trusting:1b}] run tag @s add tamed
 
 execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run schedule function roguecraft:ender_dragon/death 10s append
 execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run tag @a add victory

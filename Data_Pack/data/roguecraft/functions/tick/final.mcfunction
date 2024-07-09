@@ -1,7 +1,7 @@
 #final
-execute if entity @e[tag=egg_block] in minecraft:the_end positioned 0.5 74.5 0.5 run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10
-execute as @e[tag=egg_interaction] at @s if data entity @s attack run function roguecraft:ender_dragon/egg_damage
-execute as @e[tag=egg_block] at @s run tp @s ~ ~ ~ ~2 ~
+execute if entity @e[type=minecraft:block_display,tag=egg_block] in minecraft:the_end positioned 0.5 74.5 0.5 run particle minecraft:reverse_portal ~ ~ ~ 0.2 0.2 0.2 0.1 10
+execute as @e[type=minecraft:interaction,tag=egg_interaction] at @s if data entity @s attack run function roguecraft:ender_dragon/egg_damage
+execute as @e[type=minecraft:block_display,tag=egg_block] at @s run tp @s ~ ~ ~ ~2 ~
 
 execute as @e[type=minecraft:area_effect_cloud,tag=end_crystal_spawner,nbt={Duration:40,Age:39}] at @s run function roguecraft:ender_dragon/spawn_crystal
 execute as @e[type=minecraft:area_effect_cloud,tag=end_crystal_spawner,nbt={Duration:60,Age:59}] at @s run function roguecraft:ender_dragon/spawn_crystal

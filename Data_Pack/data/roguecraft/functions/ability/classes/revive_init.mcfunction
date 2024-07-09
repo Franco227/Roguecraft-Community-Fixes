@@ -9,17 +9,17 @@ scoreboard players remove @s haste 1
 scoreboard players remove @s[scores={class=3}] defense 50
 scoreboard players remove @s[scores={class=4}] defense 10
 
-execute store result entity @e[tag=main_storage,limit=1] data.defense int 1 run scoreboard players get @s defense
-execute store result entity @e[tag=main_storage,limit=1] data.max_health int 1 run scoreboard players get @s current_health
-execute store result entity @e[tag=main_storage,limit=1] data.speed float 1 run scoreboard players get @s speed
-execute store result entity @e[tag=main_storage,limit=1] data.attack_speed float 0.1 run scoreboard players get @s attack_speed
-execute store result entity @e[tag=main_storage,limit=1] data.attack_damage int 1 run scoreboard players get @s attack_damage
-execute store result entity @e[tag=main_storage,limit=1] data.haste int 1 run scoreboard players get @s haste
-execute store result entity @e[tag=main_storage,limit=1] data.jump_boost int 1 run scoreboard players get @s jump_boost
-execute store result entity @e[tag=main_storage,limit=1] data.resistance int 1 run scoreboard players get @s resistance
-execute store result entity @e[tag=main_storage,limit=1] data.class int 1 run scoreboard players get @s class
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.defense int 1 run scoreboard players get @s defense
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.max_health int 1 run scoreboard players get @s current_health
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.speed float 1 run scoreboard players get @s speed
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.attack_speed float 0.1 run scoreboard players get @s attack_speed
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.attack_damage int 1 run scoreboard players get @s attack_damage
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.haste int 1 run scoreboard players get @s haste
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.jump_boost int 1 run scoreboard players get @s jump_boost
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.resistance int 1 run scoreboard players get @s resistance
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.class int 1 run scoreboard players get @s class
 scoreboard players remove @s current_strength 1
-execute store result entity @e[tag=main_storage,limit=1] data.current_strength int 1 run scoreboard players get @s current_strength
+execute store result entity @e[type=minecraft:marker,tag=main_storage,limit=1] data.current_strength int 1 run scoreboard players get @s current_strength
 
 scoreboard players add @s[scores={class=3}] defense 50
 scoreboard players add @s[scores={class=4}] defense 10
@@ -28,4 +28,4 @@ scoreboard players add @s jump_boost 1
 scoreboard players add @s resistance 1
 scoreboard players add @s haste 1
 
-function roguecraft:ability/classes/revive_apply with entity @e[tag=main_storage,limit=1] data
+function roguecraft:ability/classes/revive_apply with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data

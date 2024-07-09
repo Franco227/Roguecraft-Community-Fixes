@@ -1,6 +1,6 @@
-execute in minecraft:the_end run tp @e[tag=dragon_p1] 0 150 0
-data merge entity @e[tag=dragon_p1,limit=1] {DragonPhase:5}
-tag @e[tag=dragon_p1] remove dragon_p1
+execute in minecraft:the_end run tp @e[type=minecraft:ender_dragon,tag=dragon_p1] 0 150 0
+data merge entity @e[type=minecraft:ender_dragon,tag=dragon_p1,limit=1] {DragonPhase:5}
+tag @e[type=minecraft:ender_dragon,tag=dragon_p1] remove dragon_p1
 execute in minecraft:the_end run summon minecraft:lightning_bolt 0 150 0
 execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:block.beacon.deactivate hostile @s ~ ~ ~
 execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:entity.ender_dragon.growl hostile @s ~ ~ ~

@@ -1,12 +1,12 @@
 #handle new players
-execute if entity @e[tag=master,limit=1] as @a[tag=!init_player] run function roguecraft:init_player with storage roguecraft:master
+execute if entity @e[type=minecraft:marker,tag=master,limit=1] as @a[tag=!init_player] run function roguecraft:init_player with storage roguecraft:master
 
 #give skill points for items
 execute as @a run execute store result score @s skillpoint_cache run clear @s minecraft:structure_void
 
 #right click detection
 execute as @a[scores={right_click=1..}] run function roguecraft:right_click
-execute unless entity @a[tag=!ready,tag=hub] if entity @a[tag=hub] if entity @a if data storage roguecraft:master {start:0} if data storage roguecraft:master {run_active:0} run function roguecraft:game_loop/run_start_1
+execute if data storage roguecraft:master {start:0} if data storage roguecraft:master {run_active:0} if entity @a[tag=hub] unless entity @a[tag=hub,tag=!ready] run function roguecraft:game_loop/run_start_1
 
 #toggle_ability_feedback
 execute as @a[scores={toggle_ability_feedback=1}] run function roguecraft:trigger_commands/toggle_ability_feedback with storage roguecraft:master Region

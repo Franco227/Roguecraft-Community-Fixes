@@ -7,4 +7,4 @@ scoreboard players add @s soul_charge 1
 scoreboard players operation @s mana += @e[type=minecraft:marker,tag=master,limit=1] ability_cost_5_2
 function roguecraft:ability/tell_1
 
-execute as @e[tag=id,type=minecraft:marker] run function roguecraft:set_mana_bar with entity @s data
+execute as @e[type=minecraft:marker,tag=id] run function roguecraft:set_mana_bar with entity @s data

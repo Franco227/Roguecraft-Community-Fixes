@@ -1,7 +1,7 @@
 $scoreboard players remove @s[scores={$(upgrade)=3}] shops_completed 1
 
 $scoreboard players remove @s $(upgrade) 1
-$tellraw @s [{"translate":"roguecraft.chat_messages.upgrade_sell","italic":true,"color":"gray","with":[{"translate":"roguecraft.ability.name.$(upgrade)"}]},{"translate":" (%s/%s)","italic":true,"color":"gray","with":[{"score":{"name":"@s","objective":"$(upgrade)"}},{"score":{"name":"@e[distance=..1,type=minecraft:marker,sort=nearest,limit=1]","objective":"level_max"}}]}]
+$tellraw @s [{"translate":"roguecraft.chat_messages.upgrade_sell","italic":true,"color":"gray","with":[{"translate":"roguecraft.ability.name.$(upgrade)"}]},{"translate":" (%s/%s)","italic":true,"color":"gray","with":[{"score":{"name":"@s","objective":"$(upgrade)"}},{"score":{"name":"@e[type=minecraft:marker,distance=..1,sort=nearest,limit=1]","objective":"level_max"}}]}]
 
 execute at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 0.5
 

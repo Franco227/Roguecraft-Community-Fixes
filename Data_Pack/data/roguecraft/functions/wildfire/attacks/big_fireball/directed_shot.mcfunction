@@ -11,5 +11,4 @@ data modify entity @e[type=minecraft:fireball,tag=current_fireball,limit=1] powe
 execute as @e[type=minecraft:fireball,tag=current_fireball,limit=1] run data modify entity @s Motion set from entity @s power
 
 tag @e[type=minecraft:fireball,tag=current_fireball] remove current_fireball
-tag @e[tag=wildfire_fireball] remove wildfire_fireball
 kill @e[type=minecraft:marker,tag=wildfire_fireball]

@@ -6,7 +6,7 @@ data merge entity @e[type=minecraft:ender_dragon,limit=1] {CustomName:' "Ender D
 
 bossbar set minecraft:dragon players @a[tag=olkjahsoihaef]
 
-kill @e[tag=split_1]
-kill @e[tag=split_2]
-kill @e[tag=split_3]
-kill @e[tag=Meteor]
+kill @e[type=minecraft:armor_stand,tag=split_1]
+kill @e[type=minecraft:armor_stand,tag=split_2]
+kill @e[type=minecraft:armor_stand,tag=split_3]
+kill @e[type=minecraft:armor_stand,tag=Meteor]

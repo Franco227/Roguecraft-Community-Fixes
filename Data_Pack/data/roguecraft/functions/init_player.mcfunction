@@ -120,7 +120,7 @@ $summon minecraft:marker 0 100 0 {Tags:["id"],data:{id:$(id)}}
 $execute store result bossbar minecraft:mana_$(id) max run scoreboard players get @s 100
 $execute store result bossbar minecraft:mana_$(id) value run scoreboard players get @s 100
 
-scoreboard players add @e[tag=master,type=minecraft:marker] id 1
+scoreboard players add @e[type=minecraft:marker,tag=master] id 1
 execute store result storage roguecraft:master id int 1 run scoreboard players get @e[type=minecraft:marker,tag=master,limit=1] id
 
 team join not_ready @s

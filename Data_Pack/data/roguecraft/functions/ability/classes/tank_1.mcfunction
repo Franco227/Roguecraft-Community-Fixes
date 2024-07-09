@@ -5,4 +5,4 @@ execute unless score @s mana >= @e[type=minecraft:marker,tag=master,limit=1] cla
 
 execute if score @s mana >= @e[type=minecraft:marker,tag=master,limit=1] class_cost_0 run scoreboard players operation @s mana -= @e[type=minecraft:marker,tag=master,limit=1] class_cost_0
 
-execute as @e[tag=id,type=minecraft:marker] run function roguecraft:set_mana_bar with entity @s data
+execute as @e[type=minecraft:marker,tag=id] run function roguecraft:set_mana_bar with entity @s data

@@ -7,10 +7,10 @@ $attribute @s minecraft:generic.attack_speed base set $(attack_speed)
 $attribute @s minecraft:generic.attack_damage base set $(attack_damage)
 
 #effects
-execute unless score @s haste matches 0 run function roguecraft:upgrades/haste with entity @e[tag=main_storage,limit=1] data
-execute unless score @s jump_boost matches 0 run function roguecraft:upgrades/jump_boost with entity @e[tag=main_storage,limit=1] data
-execute unless score @s resistance matches 0 run function roguecraft:upgrades/resistance with entity @e[tag=main_storage,limit=1] data
-execute unless score @s speed matches 0 run function roguecraft:upgrades/speed with entity @e[tag=main_storage,limit=1] data
+execute unless score @s haste matches 0 run function roguecraft:upgrades/haste with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s jump_boost matches 0 run function roguecraft:upgrades/jump_boost with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s resistance matches 0 run function roguecraft:upgrades/resistance with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s speed matches 0 run function roguecraft:upgrades/speed with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
 effect give @s[scores={water_breathing=1}] minecraft:water_breathing infinite 0 true
 effect give @s[scores={dolphins_grace=1}] minecraft:dolphins_grace infinite 0 true
 effect give @s[scores={fire_resistance=1}] minecraft:fire_resistance infinite 0 true
@@ -34,7 +34,7 @@ execute if score @s class matches 2 if score @s regeneration matches 0 run effec
 execute if score @s class matches 2 if score @s regeneration matches 1 run effect give @s minecraft:regeneration infinite 1 true
 
 #glass cannon
-execute if score @s class matches 3 run execute unless score @s speed matches 0 run function roguecraft:upgrades/strength with entity @e[tag=main_storage,limit=1] data
+execute if score @s class matches 3 run execute unless score @s speed matches 0 run function roguecraft:upgrades/strength with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
 
 #mage
 effect give @s[scores={class=1}] minecraft:weakness infinite 0 true

@@ -1,1 +1,1 @@
-$execute if entity @e[tag=$(boss_id),tag=boss_hitbox,nbt=!{Health:1000.0f}] run function roguecraft:wildfire/calculate_damage with entity @s data
+$execute if entity @e[type=minecraft:slime,tag=$(boss_id),tag=boss_hitbox,nbt=!{Health:1000.0f}] run function roguecraft:wildfire/calculate_damage with entity @s data

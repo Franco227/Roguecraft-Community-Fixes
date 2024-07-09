@@ -1,2 +1,2 @@
-execute as @a[nbt={Dimension:"minecraft:the_end"},gamemode=!spectator] run damage @e[type=minecraft:enderman,sort=random,limit=1] 0 minecraft:generic by @s
-execute as @a[nbt={Dimension:"minecraft:the_end"},gamemode=!spectator] at @s run playsound minecraft:entity.ender_dragon.growl hostile @s ~ ~ ~ 1 2
+execute as @a[gamemode=!spectator,nbt={Dimension:"minecraft:the_end"}] run damage @e[type=minecraft:enderman,sort=random,limit=1] 0 minecraft:generic by @s
+execute as @a[gamemode=!spectator,nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:entity.ender_dragon.growl hostile @s ~ ~ ~ 1 2

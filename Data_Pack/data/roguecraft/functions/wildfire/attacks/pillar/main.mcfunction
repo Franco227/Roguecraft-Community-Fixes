@@ -8,21 +8,21 @@ data merge storage roguecraft:master {random_rotation.z:0}
 function roguecraft:wildfire/attacks/set_random_rotation with storage roguecraft:master random_rotation
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["wildfire_pillar","untagged"]}
-tp @e[tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~ 0
-tag @e[tag=wildfire_pillar,tag=untagged] remove untagged
+tp @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~ 0
+tag @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] remove untagged
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["wildfire_pillar","untagged"]}
-tp @e[tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~72 0
-tag @e[tag=wildfire_pillar,tag=untagged] remove untagged
+tp @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~72 0
+tag @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] remove untagged
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["wildfire_pillar","untagged"]}
-tp @e[tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~144 0
-tag @e[tag=wildfire_pillar,tag=untagged] remove untagged
+tp @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~144 0
+tag @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] remove untagged
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["wildfire_pillar","untagged"]}
-tp @e[tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~216 0
-tag @e[tag=wildfire_pillar,tag=untagged] remove untagged
+tp @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~216 0
+tag @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] remove untagged
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["wildfire_pillar","untagged"]}
-tp @e[tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~288 0
-tag @e[tag=wildfire_pillar,tag=untagged] remove untagged
+tp @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] ~ ~ ~ ~288 0
+tag @e[type=minecraft:area_effect_cloud,tag=wildfire_pillar,tag=untagged] remove untagged

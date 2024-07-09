@@ -12,4 +12,4 @@ $execute if score @s class matches $(id) run scoreboard players set @s class -1
 
 function roguecraft:infinite_garden/hub/set_inventory
 
-kill @e[tag=unbind,type=!minecraft:player]
+kill @e[type=minecraft:marker,tag=unbind]

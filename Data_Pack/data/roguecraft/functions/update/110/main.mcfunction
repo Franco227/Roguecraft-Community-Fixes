@@ -4,8 +4,8 @@ execute as @a unless score @s ability_fireball matches 1..3 run scoreboard playe
 
 scoreboard players set @a version_num 1
 
-scoreboard players set @e[tag=master,type=minecraft:marker] region_x -100000
-scoreboard players set @e[tag=master,type=minecraft:marker] region_z 0
+scoreboard players set @e[type=minecraft:marker,tag=master] region_x -100000
+scoreboard players set @e[type=minecraft:marker,tag=master] region_z 0
 
 scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] region_dir 0
 scoreboard players set @e[type=minecraft:marker,tag=master,limit=1] region_counter_max 1

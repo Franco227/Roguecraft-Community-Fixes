@@ -18,7 +18,7 @@ tag @s add garden_items
 scoreboard players enable @s hub_tp
 damage @s 1 minecraft:generic_kill
 
-execute as @e[tag=id,type=minecraft:marker] run function roguecraft:mana_bar_test with entity @s data
+execute as @e[type=minecraft:marker,tag=id] run function roguecraft:mana_bar_test with entity @s data
 gamemode survival
 
 title @s subtitle ""

@@ -5,7 +5,7 @@ $execute if score @s level_current matches 3 run scoreboard players set @s level
 
 $data merge entity @s {data:{max_final:$(level_3)}}
 
-execute if score @s level_current matches 0 at @s positioned ~ ~1.75 ~ run data merge entity @e[tag=lock,type=minecraft:item_display,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":403}}}
-execute if score @s level_current matches 1 at @s positioned ~ ~1.75 ~ run data merge entity @e[tag=lock,type=minecraft:item_display,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":402}}}
-execute if score @s level_current matches 2 at @s positioned ~ ~1.75 ~ run data merge entity @e[tag=lock,type=minecraft:item_display,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":401}}}
-execute if score @s level_current matches 3 at @s positioned ~ ~1.75 ~ run data merge entity @e[tag=lock,type=minecraft:item_display,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":400}}}
+execute if score @s level_current matches 0 at @s positioned ~ ~1.75 ~ run data merge entity @e[type=minecraft:item_display,tag=lock,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":403}}}
+execute if score @s level_current matches 1 at @s positioned ~ ~1.75 ~ run data merge entity @e[type=minecraft:item_display,tag=lock,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":402}}}
+execute if score @s level_current matches 2 at @s positioned ~ ~1.75 ~ run data merge entity @e[type=minecraft:item_display,tag=lock,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":401}}}
+execute if score @s level_current matches 3 at @s positioned ~ ~1.75 ~ run data merge entity @e[type=minecraft:item_display,tag=lock,sort=nearest,limit=1] {item:{components:{"minecraft:custom_model_data":400}}}

@@ -80,5 +80,5 @@
 #execute as @s if data storage roguecraft:master {stronghold:1b} run function roguecraft:compass_stronghold with storage roguecraft:master Region
 #data modify storage roguecraft:copy_coords Decorations set from entity @e[type=minecraft:armor_stand,limit=1,tag=structure_stand] HandItems[0].Decorations
 
-#kill @e[tag=structure_stand]
+#kill @e[type=minecraft:armor_stand,tag=structure_stand]
 #item modify entity @s weapon.mainhand roguecraft:map_to_compass

@@ -5,7 +5,7 @@ $summon minecraft:item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft
 $summon minecraft:item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":6}},Rotation:[270.0f,-15.0f],Tags:["wildfire_shield","$(boss_id)","shield_3"]}
 $summon minecraft:item_display ~ ~1.5 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":7}},Tags:["wildfire_body","$(boss_id)"]}
 $summon minecraft:item_display ~ ~4 ~ {teleport_duration:1,item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,components:{"custom_model_data":8}},Tags:["wildfire_head","$(boss_id)"]}
-$execute as @e[tag=wildfire_head,tag=$(boss_id)] at @s run tp @s ~ ~ ~ facing entity @a[gamemode=!spectator,sort=nearest,limit=1]
+$execute as @e[type=minecraft:item_display,tag=wildfire_head,tag=$(boss_id)] at @s run tp @s ~ ~ ~ facing entity @a[gamemode=!spectator,sort=nearest,limit=1]
 
 #hitboxes start
 $summon minecraft:slime ~ ~ ~ {active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false},{id:"minecraft:fire_resistance",duration:-1,show_particles:false}],Silent:true,Size:1,NoAI:true,PersistenceRequired:true,Tags:["boss_hitbox","$(boss_id)","shield_0_0","shield_0"]}
@@ -42,18 +42,18 @@ $summon minecraft:slime ~ ~3.5 ~ {active_effects:[{id:"minecraft:invisibility",d
 #$summon minecraft:slime ~ ~2.5 ~ {Silent:true,Size:1,NoAI:true,Tags:["boss_hitbox","$(boss_id)","main"]}
 #$summon minecraft:slime ~ ~3.5 ~ {Silent:true,Size:1,NoAI:true,Tags:["boss_hitbox","$(boss_id)","main"]}
 
-execute as @e[tag=boss_hitbox] run attribute @s generic.max_health base set 10000
-execute as @e[tag=boss_hitbox] run data merge entity @s {Health:1000f}
+execute as @e[type=minecraft:slime,tag=boss_hitbox] run attribute @s generic.max_health base set 10000
+execute as @e[type=minecraft:slime,tag=boss_hitbox] run data merge entity @s {Health:1000f}
 #hitboxes end
 
 $execute as @e[tag=$(boss_id)] unless data entity @s {item:{components:{"minecraft:custom_model_data":8}}} run data merge entity @s {transformation:{scale:[2.5f,2.5f,2.5f]}}
-$data merge entity @e[tag=$(boss_id),tag=wildfire_head,limit=1] {transformation:{scale:[1f,1f,1f]}}
+$data merge entity @e[type=minecraft:item_display,tag=wildfire_head,tag=$(boss_id),limit=1] {transformation:{scale:[1f,1f,1f]}}
 
 execute store result storage roguecraft:master random int 1 run random value 0..99
 $execute if data storage roguecraft:master {random:99} run bossbar add minecraft:wildfire_$(boss_id) {"translate":"roguecraft.bossbar.wildfire_variant"}
 $execute unless data storage roguecraft:master {random:99} run bossbar add minecraft:wildfire_$(boss_id) {"translate":"roguecraft.bossbar.wildfire"}
 
-#fill ~5 ~ ~5 ~-5 ~5 ~-5 air destroy
+#fill ~5 ~ ~5 ~-5 ~5 ~-5 minecraft:air destroy
 
 execute if data storage roguecraft:master {wildfire_arena_direction:0} run place template roguecraft:wildfire_arena ~-8 ~-3 ~-8
 execute if data storage roguecraft:master {wildfire_arena_direction:1} run place template roguecraft:wildfire_arena ~8 ~-3 ~-8 clockwise_90

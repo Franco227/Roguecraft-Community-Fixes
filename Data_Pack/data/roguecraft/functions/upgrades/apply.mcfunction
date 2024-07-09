@@ -14,10 +14,10 @@ effect give @s minecraft:saturation 1 100 true
 effect give @s minecraft:resistance 2 4 true
 
 #effects
-execute unless score @s haste matches 0 run function roguecraft:upgrades/haste with entity @e[tag=main_storage,limit=1] data
-execute unless score @s jump_boost matches 0 run function roguecraft:upgrades/jump_boost with entity @e[tag=main_storage,limit=1] data
-execute unless score @s resistance matches 0 run function roguecraft:upgrades/resistance with entity @e[tag=main_storage,limit=1] data
-execute unless score @s speed matches 0 run function roguecraft:upgrades/speed with entity @e[tag=main_storage,limit=1] data
+execute unless score @s haste matches 0 run function roguecraft:upgrades/haste with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s jump_boost matches 0 run function roguecraft:upgrades/jump_boost with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s resistance matches 0 run function roguecraft:upgrades/resistance with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
+execute unless score @s speed matches 0 run function roguecraft:upgrades/speed with entity @e[type=minecraft:marker,tag=main_storage,limit=1] data
 effect give @s[scores={water_breathing=1}] minecraft:water_breathing infinite 0 true
 effect give @s[scores={dolphins_grace=1}] minecraft:dolphins_grace infinite 0 true
 effect give @s[scores={fire_resistance=1}] minecraft:fire_resistance infinite 0 true

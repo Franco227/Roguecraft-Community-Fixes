@@ -41,7 +41,7 @@ function roguecraft:game_loop/tp_to_run_spawn with storage roguecraft:master Reg
 execute as @s run function roguecraft:mana_bar_test
 execute at @s run spawnpoint @s ~ ~ ~
 
-title @s title {"translate":"roguecraft.bossbar.run","with":[{"score":{"name":"@e[tag=master,limit=1]","objective":"run_number"},"bold":true,"color":"green"}],"bold":true,"color":"green"}
+title @s title {"translate":"roguecraft.bossbar.run","with":[{"score":{"name":"@e[type=minecraft:marker,tag=master,limit=1]","objective":"run_number"},"bold":true,"color":"green"}],"bold":true,"color":"green"}
 
 bossbar set minecraft:difficulty players @a[tag=!hub,tag=!garden]
 

@@ -57,8 +57,8 @@ execute in roguecraft:infinite_garden positioned 0 63 0 run kill @e[distance=..8
 execute in roguecraft:infinite_garden positioned 0 63 0 run kill @e[distance=..82,type=minecraft:item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick"}}]
 
 #reset interaction entities
-execute as @e[type=minecraft:interaction,tag=!egg_interaction,tag=!obelisk,tag=!golden_scythe] run data remove entity @s interaction
-execute as @e[type=minecraft:interaction,tag=!egg_interaction,tag=!obelisk,tag=!golden_scythe] run data remove entity @s attack
+execute as @e[type=minecraft:interaction,tag=!obelisk,tag=!egg_interaction,tag=!golden_scythe] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction,tag=!obelisk,tag=!egg_interaction,tag=!golden_scythe] run data remove entity @s attack
 
 #ability items
 execute as @a[tag=hub,nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}}] run function roguecraft:set_hub_ability_item

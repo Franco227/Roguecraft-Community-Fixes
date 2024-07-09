@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=master,type=minecraft:marker] difficulty 0
+scoreboard players set @e[type=minecraft:marker,tag=master] difficulty 0
 scoreboard players add @e[type=minecraft:marker,tag=master,limit=1] difficulty_level 1
 execute if score @e[type=minecraft:marker,tag=master,limit=1] difficulty_level matches 11.. as @a[tag=!garden] unless data entity @s {active_effects:[{id:"minecraft:health_boost"}]} run function roguecraft:difficulty/decrease_health_1
 execute if score @e[type=minecraft:marker,tag=master,limit=1] difficulty_level matches 11.. as @a[tag=!garden] if data entity @s {active_effects:[{id:"minecraft:health_boost"}]} run function roguecraft:difficulty/decrease_health_boost
