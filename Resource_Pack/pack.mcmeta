@@ -1,8 +1,8 @@
 {
 "pack": {
     
-	"pack_format": 32,
-	"supported_formats": {"min_inclusive": 18, "max_inclusive": 32},
+	"pack_format": 34,
+	"supported_formats": {"min_inclusive": 34, "max_inclusive": 34},
 	"description": "Made by MonoCode"
   }
 }

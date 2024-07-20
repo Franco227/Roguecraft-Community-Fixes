@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:raw_copper_block"
+                    ]
+                }]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "roguecraft:copper_block_from_blasting_raw_copper_block",
+            "roguecraft:copper_block_from_smelting_raw_copper_block"
+        ]
+    }
+}

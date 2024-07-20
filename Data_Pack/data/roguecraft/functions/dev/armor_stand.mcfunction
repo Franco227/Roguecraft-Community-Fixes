@@ -1,1 +1,0 @@
-execute if entity @e[tag=focus] as @e[type=minecraft:armor_stand,tag=!focus,sort=nearest,limit=1] at @s run function roguecraft:dev/rotate_armor_stand

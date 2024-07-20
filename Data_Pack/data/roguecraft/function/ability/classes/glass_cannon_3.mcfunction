@@ -1,0 +1,2 @@
+$execute store result storage roguecraft:master temp_score byte 1 run effect give @s strength infinite $(temp_score_level) true
+execute if data storage roguecraft:master {temp_score:0b} run function roguecraft:ability/classes/glass_cannon_4

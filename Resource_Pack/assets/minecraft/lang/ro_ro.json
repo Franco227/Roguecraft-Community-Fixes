@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Punct de îndemânare",
   "block.minecraft.structure_block": "Nestemată de îndemânare",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Echipament",
 
   "roguecraft.generic.loadout": "Echipament",
@@ -369,6 +368,8 @@
   "roguecraft.chat_messages.golden_scythe_equip": "Cuprinzi puterea infinită a coasei de aur",
   "roguecraft.chat_messages.golden_scythe_unequip": "Te scoți din prezența copleșitoare a coasei de aur",
 
-  "dacă_vezi_acest_mesaj_trebuie_să_downloadezi_resource_packul_de_pe_modrinth": "",
-  "dacă_deja_ai_instalat_resource_packul_încearcă_să_te_reloghezi": ""
+  "if_you_see_this_message_then_you_need_to_download_the_resource_pack_from_modrinth": "",
+  "if_you_already_installed_the_resource_pack_try_to_relog": "",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences"
 }

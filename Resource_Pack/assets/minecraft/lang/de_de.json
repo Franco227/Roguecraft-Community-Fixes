@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Fähigkeitspunkt",
   "block.minecraft.structure_block": "Fähigkeitsperle",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Ausstattung",
 
 
@@ -376,5 +375,7 @@
   "roguecraft.chat_messages.golden_scythe_equip": "You grasp the infinite power of the golden scythe",
   "roguecraft.chat_messages.golden_scythe_unequip": "You remove yourself from the overwhelming presence of the golden scythe",
 
-  "biome.roguecraft.infinite_garden": "Unendlicher Garten"
+  "biome.roguecraft.infinite_garden": "Unendlicher Garten",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences"
 }

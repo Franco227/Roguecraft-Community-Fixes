@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Skillpunt",
   "block.minecraft.structure_block": "Skillsteen",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Uitrusting",
 
   "roguecraft.generic.loadout": "Uitrusting",
@@ -368,5 +367,7 @@
   "roguecraft.chat_messages.golden_scythe_unequip": "Je verwijdert jezelf van de overweldigende aanwezigheid van de gouden zeis",
 
   "if_you_see_this_message_then_you_need_to_download_the_resource_pack_from_modrinth": "",
-  "if_you_already_installed_the_resource_pack_try_to_relog": ""
+  "if_you_already_installed_the_resource_pack_try_to_relog": "",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences"
 }

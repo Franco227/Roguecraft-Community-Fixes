@@ -195,7 +195,7 @@
 
 
 
-  "block.minecraft.command_block": "Skill Gem Block",
+  
   "container.enderchest": "\uEff2\uF80A    Loadout",
 
   "roguecraft.generic.loadout": "Loadout",
@@ -387,5 +387,7 @@
   "roguecraft.chat_messages.golden_scythe_equip": "You grasp the infinite power of the golden scythe",
   "roguecraft.chat_messages.golden_scythe_unequip": "You remove yourself from the overwhelming presence of the golden scythe",
 
-  "biome.roguecraft.infinite_garden": "Infinite Garden"
+  "biome.roguecraft.infinite_garden": "Infinite Garden",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences"
 }

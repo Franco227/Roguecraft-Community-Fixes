@@ -1,2 +1,0 @@
-execute at @e[type=minecraft:ender_dragon] run summon minecraft:dragon_fireball ~ ~5 ~ {Tags:["balls"],power:[0.0,0.1,0.0]}
-execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:entity.ender_dragon.shoot hostile @s ~ ~ ~

@@ -2,7 +2,6 @@
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Skillpoint",
   "block.minecraft.structure_block": "Skill Gem",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Loadout",
 
   "roguecraft.generic.loadout": "Loadout",
@@ -368,6 +367,8 @@
   "roguecraft.chat_messages.golden_scythe_no_requirements": "You have not met the requirements yet",
   "roguecraft.chat_messages.golden_scythe_equip": "You grasp the infinite power of the golden scythe",
   "roguecraft.chat_messages.golden_scythe_unequip": "You remove yourself from the overwhelming presence of the golden scythe",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences",
 
   "if_you_see_this_message_then_you_need_to_download_the_resource_pack_from_modrinth": "",
   "if_you_already_installed_the_resource_pack_try_to_relog": ""

@@ -1,0 +1,182 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_model_data": 100
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "class": 4
+            }
+          }
+        ]
+      },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.wooden\"}],\"italic\":false}",
+            "tool": {
+                "rules": [
+                    {
+                        "speed":2,
+                        "blocks":"#roguecraft:scythe_mineable"
+                    }
+                ]
+            }
+        },
+        "conditions": 
+        [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "tool": 1
+                }
+            },
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "class": 4
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.stone\"}],\"italic\":false}",
+            "tool": {
+                "rules": [
+                    {
+                        "speed":3.5,
+                        "blocks":"#roguecraft:scythe_mineable"
+                    }
+                ]
+            }
+        },
+        "conditions": 
+        [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "tool": 2
+                }
+            },
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "class": 4
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.iron\"}],\"italic\":false}",
+            "tool": {
+                "rules": [
+                    {
+                        "speed":5,
+                        "blocks":"#roguecraft:scythe_mineable"
+                    }
+                ]
+            }
+        },
+        "conditions": 
+        [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "tool": 3
+                }
+            },
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "class": 4
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.diamond\"}],\"italic\":false}",
+            "tool": {
+                "rules": [
+                    {
+                        "speed":7,
+                        "blocks":"#roguecraft:scythe_mineable"
+                    }
+                ]
+            }
+        },
+        "conditions": 
+        [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "tool": 4
+                }
+            },
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "class": 4
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:custom_name": "{\"translate\":\"roguecraft.item.scythe\",\"with\":[{\"translate\":\"roguecraft.prefix.netherite\"}],\"italic\":false}",
+            "tool": {
+                "rules": [
+                    {
+                        "speed":9,
+                        "blocks":"#roguecraft:scythe_mineable"
+                    }
+                ]
+            }
+        },
+        "conditions": 
+        [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "tool": 5
+                }
+            },
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": 
+                {
+                    "class": 4
+                }
+            }
+        ]
+    }
+]

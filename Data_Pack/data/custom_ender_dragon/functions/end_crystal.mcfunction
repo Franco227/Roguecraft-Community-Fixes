@@ -1,3 +1,0 @@
-function custom_ender_dragon:rng_2
-execute if score @s dragon_rng matches 1 run execute at @e[type=minecraft:marker,tag=phase_2t,sort=random,limit=1] unless entity @e[type=minecraft:end_crystal,distance=..1] run execute as @a[nbt={Dimension:"minecraft:the_end"}] at @s run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 0.5 2
-execute if score @s dragon_rng matches 1 run execute at @e[type=minecraft:marker,tag=phase_2t,sort=random,limit=1] unless entity @e[type=minecraft:end_crystal,distance=..1] run summon minecraft:end_crystal ~ ~ ~ {ShowBottom:false,Glowing:true,beam_target:[I;0,73,0]}

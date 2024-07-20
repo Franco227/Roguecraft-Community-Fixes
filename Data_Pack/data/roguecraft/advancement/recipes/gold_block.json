@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:raw_gold_block"
+                    ]
+                }]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "roguecraft:gold_block_from_blasting_raw_gold_block",
+            "roguecraft:gold_block_from_smelting_raw_gold_block"
+        ]
+    }
+}

@@ -1,0 +1,2 @@
+execute in roguecraft:infinite_garden run fill -10 59 24 10 63 40 minecraft:barrier replace minecraft:barrier
+execute in roguecraft:infinite_garden run fill -11 58 23 11 63 41 minecraft:air replace minecraft:water

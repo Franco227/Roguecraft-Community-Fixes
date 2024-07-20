@@ -1,0 +1,17 @@
+{
+    "values": [
+        "#minecraft:mineable/hoe",
+        "minecraft:soul_campfire",
+        "minecraft:soul_lantern",
+        "minecraft:soul_sand",
+        "minecraft:soul_soil",
+        "minecraft:bamboo",
+        "minecraft:cobweb",
+        "minecraft:cocoa",
+        "#minecraft:leaves",
+        "minecraft:jack_o_lantern",
+        "minecraft:melon",
+        "minecraft:pumpkin",
+        "minecraft:vine"
+    ]
+}

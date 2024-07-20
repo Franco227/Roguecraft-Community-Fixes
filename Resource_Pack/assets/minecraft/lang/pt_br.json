@@ -1,8 +1,10 @@
+// Tradução Original por: R4in,
+// Com a ajuda de: zShiro__
+
 {
   "enchantment.level.0": "0",
   "block.minecraft.structure_void": "Pontos de Skill",
   "block.minecraft.structure_block": "Gema de Skill",
-  "block.minecraft.command_block": "Skill Gem Block",
   "container.enderchest": "\uEff2\uF80A    Equipamentos",
 
   "roguecraft.generic.loadout": "Baú de Equipamentos",
@@ -27,15 +29,15 @@
   "roguecraft.prefix.stone": "de Pedra",
   "roguecraft.prefix.golden": "Dourada",
   "roguecraft.prefix.iron": "de Ferro",
-  "roguecraft.prefix.diamond": "Ornada",
+  "roguecraft.prefix.diamond": "Ornada",          // Achei "Ornada" bonitinho então vou deixar ao invés "de Diamante" :v
   "roguecraft.prefix.netherite": "de Netherita",
   
   "roguecraft.bossbar.difficulty_level": "Nível de Dificuldade: %s",
   "roguecraft.bossbar.liquid_walker": "Jesus",
   "roguecraft.bossbar.dirt_walker": "Passos de Terra",
   "roguecraft.bossbar.ender_dragon": "Ender",
-  "roguecraft.bossbar.wildfire": "Chama",
-  "roguecraft.bossbar.wildfire_variant": "Fogo-Fato",
+  "roguecraft.bossbar.wildfire": "Chama",               // Referência a Ben 10 (Já que na gringa o Chama é Wildfire)
+  "roguecraft.bossbar.wildfire_variant": "Fogo-Fato",   // Eu coloquei... eu coloquei "Fogo-Fato" (já que é 1% de chance de aparecer como easter egg)
   "roguecraft.bossbar.wave": "Onda %s",
   "roguecraft.bossbar.run": "%sº Tentativa",
   "roguecraft.bossbar.wait": "Espere o Terreno carregar",
@@ -51,7 +53,7 @@
   "roguecraft.title.victory": "Vitória!",
   "roguecraft.title.defeat": "Derrota",
   "roguecraft.title.run_end_dragon": "Dragão Derrotado",
-  "roguecraft.title.enter_end": "Ender, O Tirano",
+  "roguecraft.title.enter_end": "Ender, O Tirano",        // Como as coisas tem uma "lorezinha" agora, achei bacana deixar Tirano ao invés de Dragão
   "roguecraft.title.infinite_garden": "Jardim Infinito",
   "roguecraft.title.cosmic_dome": "Domo Cósmico",
 
@@ -91,11 +93,11 @@
   "roguecraft.chat_messages.error_max": "%s já está no nível máximo",
   "roguecraft.chat_messages.error_min": "Não é possível desaprimorar mais que isso",
   "roguecraft.chat_messages.error_max_incomplete": "Aprimoramentos esgotados; derrote mais bosses para quebrar seu limite",
-  "roguecraft.chat_messages.error_too_expensive": "Você não possui pontos para esse(a) %s",
+  "roguecraft.chat_messages.error_too_expensive": "Você não possui pontos para esse(a) %s",           // Antigamente isso funcionava dizendo nome genérico como "upgrade", "classe", ficar atento pra ver se vai mudar
   "roguecraft.chat_messages.error_selling": "Agache enquanto segura o %s para desaprimorar o(a) %s",
   "roguecraft.chat_messages.ability_error_item": "Você não liberou %s ainda; compre-o clicando com as mãos vazias, e então equipe",
   "roguecraft.chat_messages.ability_equip": "Você consagrou %s como sua %s %s",
-  "roguecraft.chat_messages.ability_unbind": "Sua %s habilidade se dissipa e volta aos primórdios..",
+  "roguecraft.chat_messages.ability_unbind": "Sua %s habilidade se dissipa e volta aos primórdios..",   // O objetivo é que tenha "..." (3 pontos) finais, na teoria é pra ser assim, mas precisa de teste
   "roguecraft.chat_messages.ability": "habilidade",
   "roguecraft.chat_messages.ability_equip_a1": "primeira",
   "roguecraft.chat_messages.ability_equip_a2": "segunda",
@@ -165,7 +167,7 @@
   "roguecraft.upgrade.name.dummy_upgrade": "Upgrade Teste",
   
   "roguecraft.ability.name.ability_explosion": "Explosão",
-  "roguecraft.ability.name.ability_mining": "Mineração em Área",
+  "roguecraft.ability.name.ability_mining": "Furadeira",
   "roguecraft.ability.name.ability_arrow_wave": "Onda de Flecha",
   "roguecraft.ability.name.ability_liquid_walker": "Jesus",
   "roguecraft.ability.name.ability_fireball": "Bola de Fogo",
@@ -175,7 +177,7 @@
   "roguecraft.ability.name.ability_levitate": "Levitar",
   "roguecraft.ability.name.ability_dirt_walker": "Passos de Terra",
   "roguecraft.ability.description.ability_explosion": "Cause uma explosão nas proximidades, destruindo terreno e dando dano",
-  "roguecraft.ability.description.ability_mining": "Minera uma área em volta de você. CUIDADO: Pode quebrar blocos indestrutíveis!",
+  "roguecraft.ability.description.ability_mining": "Minera blocos na direção que estiver olhando, não quebra blocos mais fortes que sua picareta",
   "roguecraft.ability.description.ability_arrow_wave": "Crie uma onda de flechas ao seu redor",
   "roguecraft.ability.description.ability_liquid_walker": "Crie um caminho, permitindo andar sobre água e lava",
   "roguecraft.ability.description.ability_fireball": "Atire uma bola de fogo que explode ao impacto",
@@ -188,11 +190,11 @@
   "roguecraft.class.name.tank": "Tanque",
   "roguecraft.class.name.mage": "Mago",
   "roguecraft.class.name.healer": "Médico",
-  "roguecraft.class.name.glass_cannon": "Atirador",
+  "roguecraft.class.name.glass_cannon": "Atirador",   // Referência a role do Lol focada em dano (Adc/Atirador)
   "roguecraft.class.name.reaper": "Morte",
   "roguecraft.class.description.tank": "Você recebe mais vida; Habilidade: Ganhe Resistência V por 10 segundos",
   "roguecraft.class.description.mage": "Maior Regeneração de Mana e um slot extra de habilidade",
-  "roguecraft.class.description.healer": "Regenera a vida de Players próximos; Habilidade: Reviva um Player com um custo de 4 corações",
+  "roguecraft.class.description.healer": "Regenera a vida de Players próximos; Habilidade: Gaste parte de sua Vida Máxima para Reviver alguém",
   "roguecraft.class.description.glass_cannon": "Converte armadura em dano; Habilidade: O ataque é a melhor defesa!",
   "roguecraft.class.description.reaper": "Use almas ao invés de mana; Habilidade: Libere espíritos malignos",
   "roguecraft.class_ability.tank": "Escudo Impenetrável",
@@ -208,7 +210,7 @@
   "roguecraft.advancement.name.avatar": "Avatar",
   "roguecraft.advancement.name.completion": "100%",
   "roguecraft.advancement.name.difficulty_20": "Apocalipse",
-  "roguecraft.advancement.name.end_portal_destroyed": "E agora?",
+  "roguecraft.advancement.name.end_portal_destroyed": "E agora?",     // Será deletado a partir da versão 1.2.5
   "roguecraft.advancement.name.full_defense": "Durateston",
   "roguecraft.advancement.name.instant_delivery": "De volta pra você amigo",
   "roguecraft.advancement.name.instant_regret": "Arrependimento",
@@ -229,12 +231,12 @@
   "roguecraft.advancement.name.skillpoint_500": "Potencial DIVINO",
   "roguecraft.advancement.name.destroy_hub": "Pelo menos tentou!",
   "roguecraft.advancement.name.infinite_garden_void": "Não tão Imortal",
-  "roguecraft.advancement.name.first_ability": "Avara Keraba",
+  "roguecraft.advancement.name.first_ability": "Avara Keraba",            // Sim, eu meti essa diretamente de hogwarts rs
   "roguecraft.advancement.description.all_dummy": "Aprimore o Upgrade Teste até o máximo na sala de Tutorial",
   "roguecraft.advancement.description.avatar": "Tenha Jesus, Passos de Terra e Levitar tudo ao mesmo tempo",
   "roguecraft.advancement.description.completion": "Libere cada upgrade, habilidade e classe",
   "roguecraft.advancement.description.difficulty_20": "Chegue ao Nível de Dificuldade 20",
-  "roguecraft.advancement.description.end_portal_destroyed": "Destrua o Portal do End com a Mineração em Área",
+  "roguecraft.advancement.description.end_portal_destroyed": "Destrua o Portal do End com a Furadeira",       // Será deletado a partir da versão 1.2.5
   "roguecraft.advancement.description.full_defense": "Aprimore até o máximo todos os upgrades sobre Defesa",
   "roguecraft.advancement.description.instant_delivery": "Mate um ghast usando Aparar",
   "roguecraft.advancement.description.instant_regret": "Morra em até 3 segundos após usar o Foco em Combate do Atirador",
@@ -370,5 +372,7 @@
   "roguecraft.chat_messages.golden_scythe_unequip": "Você decide se abster da incrível Foice Dourada",
 
   "if_you_see_this_message_then_you_need_to_download_the_resource_pack_from_modrinth": "",
-  "if_you_already_installed_the_resource_pack_try_to_relog": ""
+  "if_you_already_installed_the_resource_pack_try_to_relog": "",
+
+  "death.attack.generic.item": "%s discovered that their actions have consequences"
 }
