@@ -29,8 +29,8 @@ function roguecraft:tag_tamed_animals
 execute as @e[type=minecraft:fox,distance=..16,tag=!VengefulSpectreImmune,nbt=!{Trusted:[]}] run tag @s add tamed
 execute as @e[type=minecraft:ocelot,distance=..16,tag=!VengefulSpectreImmune,nbt={Trusting:1b}] run tag @s add tamed
 
-execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run schedule function roguecraft:ender_dragon/death 10s append
-execute if entity @a[gamemode=survival,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run tag @a add victory
+execute if entity @a[gamemode=!spectator,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run schedule function roguecraft:ender_dragon/death 10s append
+execute if entity @a[gamemode=!spectator,nbt={Dimension:"minecraft:the_end"}] if data storage roguecraft:master {end:1} unless entity @e[type=minecraft:ender_dragon] in minecraft:the_end if loaded -100 0 -100 if loaded 100 0 100 run tag @a add victory
 
 effect give @a[gamemode=spectator] minecraft:instant_health infinite 255 true
 gamemode adventure @a[tag=hub,tag=!dev]
