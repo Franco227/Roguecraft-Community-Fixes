@@ -95,6 +95,8 @@ scoreboard objectives add ability_3 dummy
 scoreboard objectives add ability_4 dummy
 scoreboard objectives add class dummy
 
+scoreboard objectives add golden_scythe dummy
+
 scoreboard objectives add ability_explosion dummy
 scoreboard objectives add ability_mining dummy
 scoreboard objectives add ability_heal dummy

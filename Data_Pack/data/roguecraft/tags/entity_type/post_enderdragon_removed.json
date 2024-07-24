@@ -1,7 +1,7 @@
 {
     "values": [
-      "minecraft:area_effect_cloud",
       "minecraft:armor_stand",
+      "minecraft:area_effect_cloud",
       "minecraft:arrow",
       "minecraft:end_crystal",
       "minecraft:ender_pearl",
@@ -10,6 +10,7 @@
       "minecraft:experience_orb",
       "minecraft:item",
       "minecraft:shulker",
+      "minecraft:marker",
       "minecraft:shulker_bullet"
     ]
   }

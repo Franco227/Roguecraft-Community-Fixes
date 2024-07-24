@@ -13,5 +13,5 @@ execute in minecraft:the_end run summon minecraft:area_effect_cloud 42.5 93 0.5 
 
 execute in minecraft:the_end run summon minecraft:area_effect_cloud 0.5 73.5 0.5 {Duration:260,Tags:["egg_spawner"]}
 
-execute as @e[type=#roguecraft:post_enderdragon_removed] at @s run tp ~ -100 ~
-execute as @e[type=#roguecraft:post_enderdragon_removed] run kill @s
+execute in minecraft:the_end positioned 0 0 0 as @e[type=#roguecraft:post_enderdragon_removed,distance=..2000,tag=!end_crystal_spawner,tag=!egg_spawner] at @s run tp 0 -100 0
+execute in minecraft:the_end positioned 0 -100 0 as @e[type=#roguecraft:post_enderdragon_removed,distance=..100,tag=!end_crystal_spawner,tag=!egg_spawner] run kill @s

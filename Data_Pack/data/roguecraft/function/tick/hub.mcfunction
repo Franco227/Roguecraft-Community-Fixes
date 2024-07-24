@@ -10,6 +10,7 @@ execute as @e[type=minecraft:interaction,tag=obelisk] if data entity @s interact
 #golden scythe
 execute as @e[type=minecraft:interaction,tag=golden_scythe,limit=1] if data entity @s attack at @s on attacker run function roguecraft:infinite_garden/hub/golden_scythe_check
 execute as @e[type=minecraft:interaction,tag=golden_scythe,limit=1] if data entity @s interaction at @s on target run function roguecraft:infinite_garden/hub/golden_scythe_check
+execute if entity @a[scores={golden_scythe=589000069}] at @e[type=minecraft:interaction,tag=golden_scythe,limit=1] run particle minecraft:trial_spawner_detection ~ ~ ~ 0.75 1 0.75 0 1 normal @a[scores={golden_scythe=589000069}]
 
 execute as @e[type=minecraft:item_display,tag=obelisk] at @s run tp @s ~ ~ ~ ~1 ~
 execute as @e[type=minecraft:item_display,tag=obelisk] at @s if data entity @n[distance=..5,type=minecraft:marker] {data:{status:0b}} run particle minecraft:dust{color:[0.5,0.0,0.0],scale:1.0} ~ ~ ~ 0.75 1 0.75 0 1

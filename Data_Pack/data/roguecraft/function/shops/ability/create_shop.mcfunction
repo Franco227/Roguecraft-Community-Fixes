@@ -1,7 +1,7 @@
 tag @s add marked
 tag @s add shop
 
-scoreboard players set @s run_number 0
+scoreboard players set @s run_number -1
 $scoreboard players set @s level_current $(default_level)
 execute store result score @s level_min run data get entity @s data.max.level_0
 

@@ -5,6 +5,7 @@ scoreboard players set @s temp 0
 $execute as @s[scores={tool=1..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item replace entity @s container.$(selectedslot) with $(tooltype)sword[minecraft:unbreakable={}]
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item modify entity @s container.$(selectedslot) roguecraft:enchant_sword
 $execute if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item modify entity @s container.$(selectedslot) roguecraft:set_scythe
+$execute as @s[scores={golden_scythe=589000069}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900005}}] run item replace entity @s container.$(selectedslot) with golden_sword[minecraft:custom_model_data=100,minecraft:custom_name='{"translate":"roguecraft.item.scythe","with":[{"translate":"roguecraft.prefix.golden"}],"italic":false}']
 #pickaxe
 $execute as @s[scores={tool=2..}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item replace entity @s container.$(selectedslot) with $(tooltype)pickaxe[minecraft:unbreakable={}]
 $execute as @s[scores={tool=..1}] if data entity @s EnderItems[{Slot:$(selectedslot)b,components:{"minecraft:custom_model_data":900003}}] run item replace entity @s container.$(selectedslot) with stone_pickaxe[minecraft:unbreakable={}]

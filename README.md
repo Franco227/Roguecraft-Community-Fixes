@@ -1,4 +1,4 @@
-# Roguecraft 1.2.5 (1.21) Community Fixes
+# Roguecraft 1.2.6 (1.21) Community Fixes
 [Roguecraft](https://modrinth.com/datapack/rogue-craft) by MonoCode is a data pack that aims to turn Minecraft into a Roguelite game by centering the game loop around runs. Each run, your goal is to defeat the Ender Dragon, but also to collect skillpoints to become more powerful in future runs. Once every player has died, you are sent back to the hub to prepare for the next run.
 
 Roguecraft Community Fixes is a community version of the pack aiming to fix bugs and make small additions while waiting for the next update.
